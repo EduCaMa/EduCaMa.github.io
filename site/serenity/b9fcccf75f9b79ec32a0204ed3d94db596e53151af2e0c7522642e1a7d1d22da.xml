@@ -1,0 +1,18 @@
+<acceptance-test-run title="List open cases with 1 case" name="List open cases with 1 case" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="74" timestamp="2016-09-20T11:18:11.864Z">
+  <user-story id="show-cases" name="Show-cases" path="stories/managementOfCases/show/show-cases.story"/>
+  <tags>
+    <tag name="Management of cases" type="capability"/>
+    <tag name="Management of cases/Show" type="feature"/>
+    <tag name="Show-cases" type="story"/>
+    <tag name="Show/Show cases" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="0">
+    <description>Given There is 1 case</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>When I show the list of open cases</description>
+  </test-step>
+  <test-step result="PENDING" duration="2">
+    <description>Then I see 1 case</description>
+  </test-step>
+</acceptance-test-run>

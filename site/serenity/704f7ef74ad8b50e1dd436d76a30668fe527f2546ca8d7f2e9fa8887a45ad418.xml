@@ -1,0 +1,42 @@
+<acceptance-test-run title="Show entered name" name="Show entered name" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="6965" timestamp="2016-09-20T11:18:11.940Z" session-id="e8353467-1773-4b2a-a3b9-a264fa6be083">
+  <user-story id="show-cases" name="Show-cases" path="stories/managementOfCases/show/show-cases.story"/>
+  <tags>
+    <tag name="Management of cases" type="capability"/>
+    <tag name="Management of cases/Show" type="feature"/>
+    <tag name="Show-cases" type="story"/>
+    <tag name="Show/Show cases" type="story"/>
+  </tags>
+  <test-group name="Given the main page is shown" result="SUCCESS">
+    <screenshots>
+      <screenshot image="ef303fab7baa2903f76a2747b2e32c0a.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="5295">
+      <screenshots>
+        <screenshot image="ef303fab7baa2903f76a2747b2e32c0a.png"/>
+      </screenshots>
+      <description>Opens the page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When I enter the name {John Doe}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0da0508997a1001ec8a72f3eb738fce2.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="298">
+      <screenshots>
+        <screenshot image="0da0508997a1001ec8a72f3eb738fce2.png"/>
+      </screenshots>
+      <description>Enters the name: John Doe</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then {John Doe} should be greeted" result="SUCCESS">
+    <screenshots>
+      <screenshot image="0da0508997a1001ec8a72f3eb738fce2.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="148">
+      <screenshots>
+        <screenshot image="0da0508997a1001ec8a72f3eb738fce2.png"/>
+      </screenshots>
+      <description>Checks heading: John Doe</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Show-cases","List open cases with 1 case","PENDING","2016-09-20T11:18:11.864Z","0.0","0.07"
+"Show-cases","List open cases without cases","PENDING","2016-09-20T11:18:11.611Z","0.0","0.13"
+"Show-cases","Show entered name","SUCCESS","2016-09-20T11:18:11.940Z","0.0","6.97"
