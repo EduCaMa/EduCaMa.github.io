@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open cases without cases" name="List open cases without cases" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="132" timestamp="2016-09-20T11:18:11.611Z">
+<acceptance-test-run title="List open cases without cases" name="List open cases without cases" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="11443" timestamp="2016-09-26T19:09:45.053Z" session-id="22a0aed1-633c-49a3-afcc-66a0bfe3a0c3">
   <user-story id="show-cases" name="Show-cases" path="stories/managementOfCases/show/show-cases.story"/>
   <tags>
     <tag name="Management of cases" type="capability"/>
@@ -6,13 +6,38 @@
     <tag name="Show-cases" type="story"/>
     <tag name="Show/Show cases" type="story"/>
   </tags>
-  <test-step result="PENDING" duration="1">
-    <description>Given There are no open cases</description>
-  </test-step>
-  <test-step result="PENDING" duration="1">
+  <test-group name="Given There are no open cases" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="7243">
+      <screenshots>
+        <screenshot image="0b3a20babe07100106d861cc0ad058a3.png"/>
+      </screenshots>
+      <description>Opens the page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1064">
+      <screenshots>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+      </screenshots>
+      <description>Open case page</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="100">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
     <description>When I show the list of open cases</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
-    <description>Then I see an empty list</description>
-  </test-step>
+  <test-group name="Then I see an empty list" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2136">
+      <screenshots>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+      </screenshots>
+      <description>Checks the case list</description>
+    </test-step>
+  </test-group>
 </acceptance-test-run>

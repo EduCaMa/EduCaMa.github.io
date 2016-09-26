@@ -34,8 +34,8 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 0.333333],
-                ['Pending', 0.666667],
+                ['Passing', 1],
+                ['Pending', 0],
                 ['Ignored', 0],
                 ['Failing', 0],
                 ['Errors',  0],
@@ -68,8 +68,8 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '33.3% requirements tested successfully'},
-                {label: '66.7% requirements untested'},
+                {label: '100% requirements tested successfully'},
+                {label: '0% requirements untested'},
                 {label: '0%} requirements failing'},
                 {label: '0%} requirements with errors'},
                 {label: '0%} requirements with compromised tests'}
@@ -170,7 +170,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-09-2016 11:18</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-09-2016 19:10</span>
     <br style="clear:left"/>
 </div>
 
@@ -211,27 +211,27 @@
                                     <tr>
                                         <td class="summary-leading-column">Features</td>
                                         <td>1</td>
-                                        <td>0</td>
-                                        <td>0</td>
                                         <td>1</td>
+                                        <td>0</td>
+                                        <td>0</td>
                                         <td>0</td>
                                         <td>0</td>
                                     </tr>
                                     <tr>
                                         <td class="summary-leading-column">Stories</td>
                                         <td>1</td>
-                                        <td>0</td>
-                                        <td>0</td>
                                         <td>1</td>
+                                        <td>0</td>
+                                        <td>0</td>
                                         <td>0</td>
                                         <td>0</td>
                                     </tr>
                                 <tr>
                                     <td class="summary-leading-column">Acceptance Criteria (tests)</td>
-                                    <td>3</td>
-                                    <td>1</td>
-                                    <td>0</td>
                                     <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
                                     <td>0</td>
                                     <td></td>
                                 </tr>
@@ -259,10 +259,10 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>3</td>
-            <td>1 (33%)</td>
+            <td>2</td>
+            <td>2 (100%)</td>
             <td>0 (0%)</td>
-            <td>2 (67%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
@@ -275,15 +275,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>3</td>
-            <td>1 (33%)</td>
+            <td>2</td>
+            <td>2 (100%)</td>
             <td>0 (0%)</td>
-            <td>2 (67%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">7 seconds</td>
+                <td colspan="5">17 seconds</td>
         </tr>
         </body>
     </table>
@@ -343,14 +343,14 @@
             <tbody>
 
 
-                <tr class="test-PENDING requirementRow">
+                <tr class="test-SUCCESS requirementRow">
                     <td class="requirementRowCell">
-                        <span class="status_icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
-                        <span style="display:none">2</span>
+                        <span class="status_icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        <span style="display:none">1</span>
                     </td>
                     <td class="cardNumber requirementRowCell"></td>
 
-                    <td class="PENDING-text requirementRowCell">
+                    <td class="SUCCESS-text requirementRowCell">
                     <a href="javaScript:void(0)" class="read-more-link">
                     <img src="images/plus.png" height="16"/></a>
                         <span class="requirementName"><a
@@ -362,9 +362,9 @@
                         <td class="bluetext requirementRowCell">1</td>
 
 
-                    <td class="greentext highlighted-value requirementRowCell">3</td>
-                    <td class="greentext requirementRowCell">1</td>
-                    <td class="bluetext requirementRowCell">2</td>
+                    <td class="greentext highlighted-value requirementRowCell">2</td>
+                    <td class="greentext requirementRowCell">2</td>
+                    <td class="bluetext requirementRowCell">0</td>
                     <td class="redtext requirementRowCell">0</td>
                     <td class="lightorangetext requirementRowCell">0</td>
                     <td class="violettext requirementRowCell">0</td>
@@ -379,19 +379,19 @@
                         <table>
                             <tr>
                                 <td width="40px">
-                                    <div class="small">33.3%</div>
+                                    <div class="small">100%</div>
                                 </td>
                                 <td width="125px">
                                     <div class="percentagebar"
                                          title="Show
-Tests implemented: 3
-  - Passing tests: 1 (33.3% of specified requirements)
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
   - Failing tests: 0 (0% of specified requirements)
   - Tests with errors: 0 (0% of specified requirements)
   - Compromised tests 0 (0% of specified requirements)
 
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (66.7% of specified requirements)
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
   - Ignored or skipped tests: 0 (0% of specified requirements)
 
 Requirements specified:     2
@@ -399,20 +399,20 @@ Requirements with no tests: 0
 
 
 Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
+Estimated unimplemented or pending requirements: 0%
 Estimated ignored or skipped requirements: 0%"
                                          style="width: 125px;">
                                         <div class="ignoredbar"
-                                             style="width: 42px;"
+                                             style="width: 125px;"
                                              title="Show
-Tests implemented: 3
-  - Passing tests: 1 (33.3% of specified requirements)
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
   - Failing tests: 0 (0% of specified requirements)
   - Tests with errors: 0 (0% of specified requirements)
   - Compromised tests 0 (0% of specified requirements)
 
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (66.7% of specified requirements)
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
   - Ignored or skipped tests: 0 (0% of specified requirements)
 
 Requirements specified:     2
@@ -420,19 +420,19 @@ Requirements with no tests: 0
 
 
 Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
+Estimated unimplemented or pending requirements: 0%
 Estimated ignored or skipped requirements: 0%">
                                             <div class="compromisedbar"
-                                                 style="width: 42px;"
+                                                 style="width: 125px;"
                                                  title="Show
-Tests implemented: 3
-  - Passing tests: 1 (33.3% of specified requirements)
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
   - Failing tests: 0 (0% of specified requirements)
   - Tests with errors: 0 (0% of specified requirements)
   - Compromised tests 0 (0% of specified requirements)
 
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (66.7% of specified requirements)
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
   - Ignored or skipped tests: 0 (0% of specified requirements)
 
 Requirements specified:     2
@@ -440,19 +440,19 @@ Requirements with no tests: 0
 
 
 Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
+Estimated unimplemented or pending requirements: 0%
 Estimated ignored or skipped requirements: 0%">
                                                 <div class="errorbar"
-                                                     style="width: 42px;"
+                                                     style="width: 125px;"
                                                      title="Show
-Tests implemented: 3
-  - Passing tests: 1 (33.3% of specified requirements)
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
   - Failing tests: 0 (0% of specified requirements)
   - Tests with errors: 0 (0% of specified requirements)
   - Compromised tests 0 (0% of specified requirements)
 
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (66.7% of specified requirements)
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
   - Ignored or skipped tests: 0 (0% of specified requirements)
 
 Requirements specified:     2
@@ -460,19 +460,19 @@ Requirements with no tests: 0
 
 
 Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
+Estimated unimplemented or pending requirements: 0%
 Estimated ignored or skipped requirements: 0%">
                                                     <div class="failingbar"
-                                                         style="width: 42px;"
+                                                         style="width: 125px;"
                                                          title="Show
-Tests implemented: 3
-  - Passing tests: 1 (33.3% of specified requirements)
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
   - Failing tests: 0 (0% of specified requirements)
   - Tests with errors: 0 (0% of specified requirements)
   - Compromised tests 0 (0% of specified requirements)
 
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (66.7% of specified requirements)
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
   - Ignored or skipped tests: 0 (0% of specified requirements)
 
 Requirements specified:     2
@@ -480,19 +480,19 @@ Requirements with no tests: 0
 
 
 Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
+Estimated unimplemented or pending requirements: 0%
 Estimated ignored or skipped requirements: 0%">
                                                         <div class="passingbar"
-                                                             style="width: 42px;"
+                                                             style="width: 125px;"
                                                              title="Show
-Tests implemented: 3
-  - Passing tests: 1 (33.3% of specified requirements)
+Tests implemented: 2
+  - Passing tests: 2 (100% of specified requirements)
   - Failing tests: 0 (0% of specified requirements)
   - Tests with errors: 0 (0% of specified requirements)
   - Compromised tests 0 (0% of specified requirements)
 
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (66.7% of specified requirements)
+Tests not implemented or not executed: 0
+  - Pending tests: 0 (0% of specified requirements)
   - Ignored or skipped tests: 0 (0% of specified requirements)
 
 Requirements specified:     2
@@ -500,7 +500,7 @@ Requirements with no tests: 0
 
 
 Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
+Estimated unimplemented or pending requirements: 0%
 Estimated ignored or skipped requirements: 0%">
                                                         </div>
                                                     </div>
@@ -539,38 +539,21 @@ Estimated ignored or skipped requirements: 0%">
                         </thead>
                         <tbody>
 
-                            <tr class="test-PENDING">
-                                <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">PENDING</span></td>
-                                <td class="PENDING-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
                                     <a href="b9fcccf75f9b79ec32a0204ed3d94db596e53151af2e0c7522642e1a7d1d22da.html" class="ellipsis" title="">
                                     List open cases with 1 case 
                                     </a></div>
                                 </td>
 
-                                <td class="lightgreentext">3</td>
+                                <td class="lightgreentext">9</td>
 
 
-                                <td class="lightgreentext">0.07</td>
-                            </tr>
-
-                            <tr class="test-PENDING">
-                                <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
-                                    
-                                    <span style="display:none">PENDING</span></td>
-                                <td class="PENDING-text">
-                                    <div class="ellipsis">
-                                    <a href="8dc5ee1bb4cf5ad9dfb6315abcd4f2e2368e20dba64ecacebb400225e643a890.html" class="ellipsis" title="">
-                                    List open cases without cases 
-                                    </a></div>
-                                </td>
-
-                                <td class="lightgreentext">3</td>
-
-
-                                <td class="lightgreentext">0.13</td>
+                                <td class="lightgreentext">5.43</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -579,15 +562,15 @@ Estimated ignored or skipped requirements: 0%">
                                     <span style="display:none">SUCCESS</span></td>
                                 <td class="SUCCESS-text">
                                     <div class="ellipsis">
-                                    <a href="704f7ef74ad8b50e1dd436d76a30668fe527f2546ca8d7f2e9fa8887a45ad418.html" class="ellipsis" title="">
-                                    Show entered name 
+                                    <a href="8dc5ee1bb4cf5ad9dfb6315abcd4f2e2368e20dba64ecacebb400225e643a890.html" class="ellipsis" title="">
+                                    List open cases without cases 
                                     </a></div>
                                 </td>
 
                                 <td class="lightgreentext">6</td>
 
 
-                                <td class="lightgreentext">6.97</td>
+                                <td class="lightgreentext">11.44</td>
                             </tr>
                         </tbody>
                     </table>

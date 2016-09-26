@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open cases with 1 case" name="List open cases with 1 case" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="74" timestamp="2016-09-20T11:18:11.864Z">
+<acceptance-test-run title="List open cases with 1 case" name="List open cases with 1 case" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5431" timestamp="2016-09-26T19:09:56.546Z" session-id="22a0aed1-633c-49a3-afcc-66a0bfe3a0c3">
   <user-story id="show-cases" name="Show-cases" path="stories/managementOfCases/show/show-cases.story"/>
   <tags>
     <tag name="Management of cases" type="capability"/>
@@ -6,13 +6,56 @@
     <tag name="Show-cases" type="story"/>
     <tag name="Show/Show cases" type="story"/>
   </tags>
-  <test-step result="PENDING" duration="0">
-    <description>Given There is 1 case</description>
-  </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-group name="Given There is 1 case" result="SUCCESS">
+    <screenshots>
+      <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="1258">
+      <screenshots>
+        <screenshot image="4a4e001aa81df0e237f75524373729e2.png"/>
+      </screenshots>
+      <description>Opens the page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="482">
+      <screenshots>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+      </screenshots>
+      <description>Open case page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="358">
+      <screenshots>
+        <screenshot image="a4bb335fbeb6b1ec03dcd24325623377.png"/>
+      </screenshots>
+      <description>Open add case modal</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="337">
+      <screenshots>
+        <screenshot image="7fb82d1f8a5c28730a7c28a5b832be91.png"/>
+      </screenshots>
+      <description>Add one case</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="407">
+      <screenshots>
+        <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
+      </screenshots>
+      <description>Close add case modal</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="103">
+    <screenshots>
+      <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
+    </screenshots>
     <description>When I show the list of open cases</description>
   </test-step>
-  <test-step result="PENDING" duration="2">
-    <description>Then I see 1 case</description>
-  </test-step>
+  <test-group name="Then I see 1 case" result="SUCCESS">
+    <screenshots>
+      <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2175">
+      <screenshots>
+        <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
+      </screenshots>
+      <description>Checks the case list for one case</description>
+    </test-step>
+  </test-group>
 </acceptance-test-run>
