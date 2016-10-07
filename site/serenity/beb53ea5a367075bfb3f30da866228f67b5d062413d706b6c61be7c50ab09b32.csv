@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Search-for-cases-by-customer","Display a message if the search string does not match any case","PENDING","2016-10-07T14:25:15.094Z","0.0","0.03"
+"Show-cases","List open cases with 5 cases","PENDING","2016-10-07T14:24:55.381Z","0.0","0.37"
+"Search-for-cases-by-customer","Search for cases by exact customer name","PENDING","2016-10-07T14:25:15.002Z","0.0","0.03"
+"Search-for-cases-by-customer","Search for cases by substrings of customer name","PENDING","2016-10-07T14:25:15.032Z","0.0","0.06"

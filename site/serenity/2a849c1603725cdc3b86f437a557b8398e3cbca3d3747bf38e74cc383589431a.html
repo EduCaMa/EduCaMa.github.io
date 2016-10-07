@@ -34,8 +34,8 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 1],
-                ['Pending', 0],
+                ['Passing', 0.666667],
+                ['Pending', 0.333333],
                 ['Ignored', 0],
                 ['Failing', 0],
                 ['Errors',  0],
@@ -68,8 +68,8 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '100% requirements tested successfully'},
-                {label: '0% requirements untested'},
+                {label: '66.7% requirements tested successfully'},
+                {label: '33.3% requirements untested'},
                 {label: '0%} requirements failing'},
                 {label: '0%} requirements with errors'},
                 {label: '0%} requirements with compromised tests'}
@@ -171,7 +171,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-09-2016 19:10</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-10-2016 14:25</span>
     <br style="clear:left"/>
 </div>
 
@@ -211,10 +211,10 @@
                                 <body>
                                 <tr>
                                     <td class="summary-leading-column">Acceptance Criteria (tests)</td>
-                                    <td>2</td>
+                                    <td>3</td>
                                     <td>2</td>
                                     <td>0</td>
-                                    <td>0</td>
+                                    <td>1</td>
                                     <td>0</td>
                                     <td></td>
                                 </tr>
@@ -242,10 +242,10 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>2</td>
-            <td>2 (100%)</td>
+            <td>3</td>
+            <td>2 (67%)</td>
             <td>0 (0%)</td>
-            <td>0 (0%)</td>
+            <td>1 (33%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
@@ -258,15 +258,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>2</td>
-            <td>2 (100%)</td>
+            <td>3</td>
+            <td>2 (67%)</td>
             <td>0 (0%)</td>
-            <td>0 (0%)</td>
+            <td>1 (33%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">17 seconds</td>
+                <td colspan="5">19 seconds</td>
         </tr>
         </body>
     </table>
@@ -300,7 +300,7 @@
                                     <span style="display:none">SUCCESS</span></td>
                                 <td class="SUCCESS-text">
                                     <div class="ellipsis">
-                                    <a href="b9fcccf75f9b79ec32a0204ed3d94db596e53151af2e0c7522642e1a7d1d22da.html" class="ellipsis" title="">
+                                    <a href="b82e456ea990999198210ed85f524e01fb485d2aacb04a0f1b7151436dd65267.html" class="ellipsis" title="">
                                     List open cases with 1 case 
                                     </a></div>
                                 </td>
@@ -308,7 +308,24 @@
                                 <td class="lightgreentext">9</td>
 
 
-                                <td class="lightgreentext">5.43</td>
+                                <td class="lightgreentext">5.94</td>
+                            </tr>
+
+                            <tr class="test-PENDING">
+                                <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                                    
+                                    <span style="display:none">PENDING</span></td>
+                                <td class="PENDING-text">
+                                    <div class="ellipsis">
+                                    <a href="4025fe76ba3e78ae8be68f6c502b6fdf73d2315bbd744890eb575073cbddd5b5.html" class="ellipsis" title="">
+                                    List open cases with 5 cases 
+                                    </a></div>
+                                </td>
+
+                                <td class="lightgreentext">3</td>
+
+
+                                <td class="lightgreentext">0.37</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -317,7 +334,7 @@
                                     <span style="display:none">SUCCESS</span></td>
                                 <td class="SUCCESS-text">
                                     <div class="ellipsis">
-                                    <a href="8dc5ee1bb4cf5ad9dfb6315abcd4f2e2368e20dba64ecacebb400225e643a890.html" class="ellipsis" title="">
+                                    <a href="7ce9656110f87a33ed65c21dfcc03c578ebef6b85bddebd5efa729bb4cb61893.html" class="ellipsis" title="">
                                     List open cases without cases 
                                     </a></div>
                                 </td>
@@ -325,7 +342,7 @@
                                 <td class="lightgreentext">6</td>
 
 
-                                <td class="lightgreentext">11.44</td>
+                                <td class="lightgreentext">12.77</td>
                             </tr>
                         </tbody>
                     </table>
