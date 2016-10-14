@@ -1,4 +1,4 @@
-<acceptance-test-run title="Show the details of a case" name="Show the details of a case" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="56" timestamp="2016-10-09T21:06:35.581Z">
+<acceptance-test-run title="Show the details of a case" name="Show the details of a case" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="28" timestamp="2016-10-14T11:04:26.811Z">
   <user-story id="show-details-of-a-case" name="Show-details-of-a-case" path="stories/workOnCase/showCaseDetails/showListOfTasks/show-details-of-a-case.story"/>
   <tags>
     <tag name="Work on case" type="capability"/>
@@ -7,7 +7,7 @@
     <tag name="Show list of tasks/Show details of a case" type="story"/>
     <tag name="Show-details-of-a-case" type="story"/>
   </tags>
-  <test-step result="PENDING" duration="1">
+  <test-step result="PENDING" duration="0">
     <description>Given Tom reviews the list of open cases</description>
   </test-step>
   <test-step result="PENDING" duration="0">

@@ -1,4 +1,4 @@
-<acceptance-test-run title="Display a message if the search string does not match any case" name="Display a message if the search string does not match any case" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="17" timestamp="2016-10-09T21:06:35.555Z">
+<acceptance-test-run title="Display a message if the search string does not match any case" name="Display a message if the search string does not match any case" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="12" timestamp="2016-10-14T11:04:26.788Z">
   <user-story id="search-for-cases-by-customer" name="Search-for-cases-by-customer" path="stories/manageListOfCases/searchForCases/search-for-cases-by-customer.story"/>
   <tags>
     <tag name="Manage list of cases" type="capability"/>
@@ -6,13 +6,13 @@
     <tag name="Search for cases/Search for cases by customer" type="story"/>
     <tag name="Search-for-cases-by-customer" type="story"/>
   </tags>
-  <test-step result="PENDING" duration="1">
+  <test-step result="PENDING" duration="0">
     <description>Given There are 5 cases, one from customer MyStuff, one from customer MySofa and 3 from customer Stuff24</description>
   </test-step>
   <test-step result="IGNORED" duration="0">
     <description>When I show the list of open cases</description>
   </test-step>
-  <test-step result="PENDING" duration="1">
+  <test-step result="PENDING" duration="0">
     <description>And I enter &quot;abc&quot; into the search input field</description>
   </test-step>
   <test-step result="PENDING" duration="0">
