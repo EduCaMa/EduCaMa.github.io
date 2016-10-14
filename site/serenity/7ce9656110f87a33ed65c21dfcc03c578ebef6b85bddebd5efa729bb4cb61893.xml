@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open cases without cases" name="List open cases without cases" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8465" timestamp="2016-10-14T11:04:13.676Z" session-id="fa166238-8766-4edf-a5cf-e095e931fb4f">
+<acceptance-test-run title="List open cases without cases" name="List open cases without cases" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9184" timestamp="2016-10-14T12:31:22.162Z" session-id="880ab205-bb39-4d23-b774-2d34cfbf3744">
   <user-story id="show-cases" name="Show-cases" path="stories/manageListOfCases/show/show-cases.story"/>
   <tags>
     <tag name="Manage list of cases" type="capability"/>
@@ -10,20 +10,20 @@
     <screenshots>
       <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="3807">
+    <test-step result="SUCCESS" duration="4355">
       <screenshots>
         <screenshot image="0b3a20babe07100106d861cc0ad058a3.png"/>
       </screenshots>
       <description>Opens the page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1927">
+    <test-step result="SUCCESS" duration="2102">
       <screenshots>
         <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
       </screenshots>
       <description>Open case page</description>
     </test-step>
   </test-group>
-  <test-step result="SUCCESS" duration="66">
+  <test-step result="SUCCESS" duration="79">
     <screenshots>
       <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
     </screenshots>
@@ -33,7 +33,7 @@
     <screenshots>
       <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="2096">
+    <test-step result="SUCCESS" duration="2090">
       <screenshots>
         <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
       </screenshots>
