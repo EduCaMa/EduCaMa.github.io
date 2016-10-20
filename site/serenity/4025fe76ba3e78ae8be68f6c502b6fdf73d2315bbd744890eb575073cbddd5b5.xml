@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open cases with 5 cases" name="List open cases with 5 cases" steps="3" successful="0" failures="0" skipped="0" ignored="1" pending="2" annotated-result="PENDING" result="PENDING" duration="171" timestamp="2016-10-14T12:31:21.838Z">
+<acceptance-test-run title="List open cases with 5 cases" name="List open cases with 5 cases" steps="3" successful="0" failures="0" skipped="0" ignored="1" pending="2" annotated-result="PENDING" result="PENDING" duration="82" timestamp="2016-10-20T14:11:25.402Z">
   <user-story id="show-cases" name="Show-cases" path="stories/manageListOfCases/show/show-cases.story"/>
   <tags>
     <tag name="Manage list of cases" type="capability"/>
@@ -6,10 +6,10 @@
     <tag name="Show-cases" type="story"/>
     <tag name="Show/Show cases" type="story"/>
   </tags>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>Given There are 5 cases</description>
   </test-step>
-  <test-step result="IGNORED" duration="0">
+  <test-step result="IGNORED" duration="7">
     <description>When I show the list of open cases</description>
   </test-step>
   <test-step result="PENDING" duration="0">

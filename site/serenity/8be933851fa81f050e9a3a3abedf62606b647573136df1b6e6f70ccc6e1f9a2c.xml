@@ -1,4 +1,4 @@
-<acceptance-test-run title="Display a message if the search string does not match any case" name="Display a message if the search string does not match any case" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="24" timestamp="2016-10-14T12:31:36.604Z">
+<acceptance-test-run title="Display a message if the search string does not match any case" name="Display a message if the search string does not match any case" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="29" timestamp="2016-10-20T14:11:38.759Z">
   <user-story id="search-for-cases-by-customer" name="Search-for-cases-by-customer" path="stories/manageListOfCases/searchForCases/search-for-cases-by-customer.story"/>
   <tags>
     <tag name="Manage list of cases" type="capability"/>

@@ -1,4 +1,4 @@
-<acceptance-test-run title="Show the details of a case" name="Show the details of a case" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="13" timestamp="2016-10-14T12:31:36.636Z">
+<acceptance-test-run title="Show the details of a case" name="Show the details of a case" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="32" timestamp="2016-10-20T14:11:38.803Z">
   <user-story id="show-details-of-a-case" name="Show-details-of-a-case" path="stories/workOnCase/showCaseDetails/showListOfTasks/show-details-of-a-case.story"/>
   <tags>
     <tag name="Work on case" type="capability"/>

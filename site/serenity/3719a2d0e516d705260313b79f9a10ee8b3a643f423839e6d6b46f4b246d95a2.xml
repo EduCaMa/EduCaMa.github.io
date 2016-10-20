@@ -1,4 +1,4 @@
-<acceptance-test-run title="Search for cases by exact customer name" name="Search for cases by exact customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="34" timestamp="2016-10-14T12:31:36.540Z">
+<acceptance-test-run title="Search for cases by exact customer name" name="Search for cases by exact customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="60" timestamp="2016-10-20T14:11:38.666Z">
   <user-story id="search-for-cases-by-customer" name="Search-for-cases-by-customer" path="stories/manageListOfCases/searchForCases/search-for-cases-by-customer.story"/>
   <tags>
     <tag name="Manage list of cases" type="capability"/>
