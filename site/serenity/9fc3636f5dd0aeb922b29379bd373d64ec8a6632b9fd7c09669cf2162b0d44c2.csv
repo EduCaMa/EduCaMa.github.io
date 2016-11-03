@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Show-cases","List open cases with 1 case","SUCCESS","2016-10-28T15:36:35.800Z","0.0","4.98"
-"Show-cases","List open cases with 5 cases","PENDING","2016-10-28T15:36:26.099Z","0.0","0.2"
-"Show-cases","List open cases without cases","SUCCESS","2016-10-28T15:36:26.511Z","0.0","9.29"
+"Show-cases","List open cases with 1 case","SUCCESS","2016-11-03T09:07:31.066Z","0.0","5.11"
+"Show-cases","List open cases with 5 cases","PENDING","2016-11-03T09:07:20.867Z","0.0","0.19"
+"Show-cases","List open cases without cases","SUCCESS","2016-11-03T09:07:21.234Z","0.0","9.82"

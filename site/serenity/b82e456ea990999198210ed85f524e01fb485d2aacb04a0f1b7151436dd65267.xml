@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open cases with 1 case" name="List open cases with 1 case" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="4981" timestamp="2016-10-28T15:36:35.800Z" session-id="ea378053-e50c-42b5-9931-67d72618fe75">
+<acceptance-test-run title="List open cases with 1 case" name="List open cases with 1 case" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5111" timestamp="2016-11-03T09:07:31.066Z" session-id="4c666902-bdb8-4de5-8756-76c91ae3cb93">
   <user-story id="show-cases" name="Show-cases" path="stories/manageListOfCases/show/show-cases.story"/>
   <tags>
     <tag name="Manage list of cases" type="capability"/>
@@ -10,38 +10,38 @@
     <screenshots>
       <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="1363">
+    <test-step result="SUCCESS" duration="1458">
       <screenshots>
         <screenshot image="4a4e001aa81df0e237f75524373729e2.png"/>
       </screenshots>
       <description>Opens the page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="289">
+    <test-step result="SUCCESS" duration="316">
       <screenshots>
         <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
       </screenshots>
       <description>Open case page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="258">
+    <test-step result="SUCCESS" duration="273">
       <screenshots>
         <screenshot image="a4bb335fbeb6b1ec03dcd24325623377.png"/>
       </screenshots>
       <description>Open add case modal</description>
     </test-step>
-    <test-step result="SUCCESS" duration="414">
+    <test-step result="SUCCESS" duration="292">
       <screenshots>
-        <screenshot image="7fc39a5a6b01360f0b5eb39e8fd529d1.png"/>
+        <screenshot image="c4e36f1a00989af22d112a8df02f6d81.png"/>
       </screenshots>
       <description>Add one case</description>
     </test-step>
-    <test-step result="SUCCESS" duration="241">
+    <test-step result="SUCCESS" duration="304">
       <screenshots>
         <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
       </screenshots>
       <description>Close add case modal</description>
     </test-step>
   </test-group>
-  <test-step result="SUCCESS" duration="55">
+  <test-step result="SUCCESS" duration="57">
     <screenshots>
       <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
     </screenshots>
@@ -51,7 +51,7 @@
     <screenshots>
       <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="2099">
+    <test-step result="SUCCESS" duration="2125">
       <screenshots>
         <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
       </screenshots>
