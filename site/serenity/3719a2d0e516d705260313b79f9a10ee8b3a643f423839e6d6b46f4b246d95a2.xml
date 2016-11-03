@@ -1,4 +1,4 @@
-<acceptance-test-run title="Search for cases by exact customer name" name="Search for cases by exact customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="22" timestamp="2016-11-03T09:07:36.480Z">
+<acceptance-test-run title="Search for cases by exact customer name" name="Search for cases by exact customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="31" timestamp="2016-11-03T16:04:53.007Z">
   <user-story id="search-for-cases-by-customer" name="Search-for-cases-by-customer" path="stories/manageListOfCases/searchForCases/search-for-cases-by-customer.story"/>
   <tags>
     <tag name="Manage list of cases" type="capability"/>
@@ -12,10 +12,10 @@
   <test-step result="IGNORED" duration="0">
     <description>When I show the list of open cases</description>
   </test-step>
-  <test-step result="PENDING" duration="1">
+  <test-step result="PENDING" duration="2">
     <description>And I enter &quot;MyStuff&quot; into the search input field</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>Then I see 1 case from customer MyStuff</description>
   </test-step>
 </acceptance-test-run>
