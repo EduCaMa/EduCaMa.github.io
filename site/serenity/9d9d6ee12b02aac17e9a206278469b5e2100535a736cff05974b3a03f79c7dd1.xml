@@ -1,0 +1,27 @@
+<acceptance-test-run title="Show the details of a case" name="Show the details of a case" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="39" timestamp="2016-11-03T16:22:16.109Z">
+  <user-story id="show_details_of_a_case" name="Show details of a case" path="stories/workOnCase/showCaseDetails/showListOfTasks/show_details_of_a_case.story"/>
+  <tags>
+    <tag name="Work on case" type="capability"/>
+    <tag name="Work on case/Show case details" type="feature"/>
+    <tag name="Show case details/Show list of tasks" type="story"/>
+    <tag name="Show list of tasks/Show details of a case" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="10">
+    <description>Given Tom reviews the list of open cases</description>
+  </test-step>
+  <test-step result="PENDING" duration="1">
+    <description>When Tom selects the case for customer MyStuff</description>
+  </test-step>
+  <test-step result="PENDING" duration="1">
+    <description>Then Tom sees the case details</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>And Tom sees the available tasks for this case</description>
+  </test-step>
+  <test-step result="PENDING" duration="1">
+    <description>And Tom sees the active tasks for this case</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>And Tom sees the completed tasks for this case</description>
+  </test-step>
+</acceptance-test-run>

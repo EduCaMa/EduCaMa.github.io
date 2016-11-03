@@ -1,0 +1,42 @@
+<acceptance-test-run title="List open cases without cases" name="List open cases without cases" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="13038" timestamp="2016-11-03T16:21:57.233Z" session-id="39d88977-9742-4095-a77e-e235c71590ad">
+  <user-story id="show_cases" name="Show cases" path="stories/manageListOfCases/show/show_cases.story"/>
+  <tags>
+    <tag name="Manage list of cases" type="capability"/>
+    <tag name="Manage list of cases/Show" type="feature"/>
+    <tag name="Show/Show cases" type="story"/>
+  </tags>
+  <test-group name="Given There are no open cases" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="8335">
+      <screenshots>
+        <screenshot image="0b3a20babe07100106d861cc0ad058a3.png"/>
+      </screenshots>
+      <description>Opens the page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1925">
+      <screenshots>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+      </screenshots>
+      <description>Open case page</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="54">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
+    <description>When I show the list of open cases</description>
+  </test-step>
+  <test-group name="Then I see an empty list" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2141">
+      <screenshots>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+      </screenshots>
+      <description>Checks the case list</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

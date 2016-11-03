@@ -1,0 +1,20 @@
+<acceptance-test-run title="Display a message if the search string does not match any case" name="Display a message if the search string does not match any case" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="67" timestamp="2016-11-03T16:21:56.893Z">
+  <user-story id="search_for_cases_by_customer" name="Search for cases by customer" path="stories/manageListOfCases/searchForCases/search_for_cases_by_customer.story"/>
+  <tags>
+    <tag name="Manage list of cases" type="capability"/>
+    <tag name="Manage list of cases/Search for cases" type="feature"/>
+    <tag name="Search for cases/Search for cases by customer" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="1">
+    <description>Given There are 5 cases, one from customer MyStuff, one from customer MySofa and 3 from customer Stuff24</description>
+  </test-step>
+  <test-step result="IGNORED" duration="0">
+    <description>When I show the list of open cases</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>And I enter &quot;abc&quot; into the search input field</description>
+  </test-step>
+  <test-step result="PENDING" duration="1">
+    <description>Then I see a message &quot;no case found for &apos;abc&apos;&quot;</description>
+  </test-step>
+</acceptance-test-run>
