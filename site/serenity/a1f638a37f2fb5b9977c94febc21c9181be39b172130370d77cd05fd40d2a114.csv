@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Search for cases by customer","Display a message if the search string does not match any case","PENDING","2016-11-03T16:21:56.893Z","0.0","0.07"
-"Search for cases by customer","Search for cases by exact customer name","PENDING","2016-11-03T16:21:56.207Z","0.0","0.25"
-"Search for cases by customer","Search for cases by substrings of customer name","PENDING","2016-11-03T16:21:56.750Z","0.0","0.14"
+"Search for cases by customer","Display a message if the search string does not match any case","PENDING","2016-11-04T09:57:15.574Z","0.0","0.05"
+"Search for cases by customer","Search for cases by exact customer name","PENDING","2016-11-04T09:57:14.855Z","0.0","0.31"
+"Search for cases by customer","Search for cases by substrings of customer name","PENDING","2016-11-04T09:57:15.467Z","0.0","0.08"
