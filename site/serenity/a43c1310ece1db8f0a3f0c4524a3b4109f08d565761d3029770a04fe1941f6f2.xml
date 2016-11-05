@@ -1,0 +1,42 @@
+<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="10766" timestamp="2016-11-05T20:19:53.351Z" session-id="6977ed42-7f69-42ad-a4fa-549e0b1d64d8">
+  <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
+  <tags>
+    <tag name="Manage shipments" type="capability"/>
+    <tag name="Manage shipments/Show list of shipments" type="feature"/>
+    <tag name="Show list of shipments/Show current shipments" type="story"/>
+  </tags>
+  <test-group name="Given There are no open shipments" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="7524">
+      <screenshots>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+      </screenshots>
+      <description>Opens the page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="639">
+      <screenshots>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+      </screenshots>
+      <description>Open shipments list page</description>
+    </test-step>
+  </test-group>
+  <test-step result="SUCCESS" duration="62">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
+    <description>When I show the list of current shipments</description>
+  </test-step>
+  <test-group name="Then I see an empty list" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2101">
+      <screenshots>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+      </screenshots>
+      <description>Checks the shipments list</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

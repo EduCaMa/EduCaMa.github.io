@@ -1,0 +1,20 @@
+<acceptance-test-run title="Search for shipments by exact customer name" name="Search for shipments by exact customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="68" timestamp="2016-11-05T20:19:52.949Z">
+  <user-story id="search_for_shipments_by_customer" name="Search for shipments by customer" path="stories/manageShipments/searchForShipments/search_for_shipments_by_customer.story"/>
+  <tags>
+    <tag name="Manage shipments" type="capability"/>
+    <tag name="Manage shipments/Search for shipments" type="feature"/>
+    <tag name="Search for shipments/Search for shipments by customer" type="story"/>
+  </tags>
+  <test-step result="PENDING" duration="2">
+    <description>Given There are 5 shipments, one from customer MyStuff, one from customer MySofa and 3 from customer Stuff24</description>
+  </test-step>
+  <test-step result="IGNORED" duration="1">
+    <description>When I show the list of current shipments</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>And I enter &quot;MyStuff&quot; into the search input field</description>
+  </test-step>
+  <test-step result="PENDING" duration="0">
+    <description>Then I see 1 case from customer MyStuff</description>
+  </test-step>
+</acceptance-test-run>
