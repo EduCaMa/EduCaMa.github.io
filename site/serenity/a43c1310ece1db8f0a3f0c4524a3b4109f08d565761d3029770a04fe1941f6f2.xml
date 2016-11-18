@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="7705" timestamp="2016-11-18T09:19:48.289Z" session-id="d9826303-3792-4eae-b8e0-ff4f467d58f2">
+<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="6056" timestamp="2016-11-18T13:18:52.584Z" session-id="4ca5eaea-6fc8-4713-a4c9-f8852de9cb7f">
   <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
@@ -9,20 +9,20 @@
     <screenshots>
       <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="4829">
+    <test-step result="SUCCESS" duration="3417">
       <screenshots>
         <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
       </screenshots>
       <description>Opens the page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="388">
+    <test-step result="SUCCESS" duration="279">
       <screenshots>
         <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
       </screenshots>
       <description>Open shipments list page</description>
     </test-step>
   </test-group>
-  <test-step result="SUCCESS" duration="68">
+  <test-step result="SUCCESS" duration="40">
     <screenshots>
       <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
     </screenshots>
@@ -32,7 +32,7 @@
     <screenshots>
       <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="2101">
+    <test-step result="SUCCESS" duration="2087">
       <screenshots>
         <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
       </screenshots>
