@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Show current shipments" skipped="1" tests="3" time="18.22" timestamp="2016-11-315 07:29:04"><testcase name="List open shipments with 5 shipments"><skipped/></testcase><testcase name="List open shipments without shipments"/><testcase name="List open shipments with 1 shipment"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Show current shipments" skipped="1" tests="3" time="19.42" timestamp="2016-11-323 09:02:43"><testcase name="List open shipments with 5 shipments"><skipped/></testcase><testcase name="List open shipments without shipments"><failure message="Expected enabled element was not enabled&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc', ip: '172.17.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.7-040807-generic', java.version: '1.8.0_31'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc', ip: '172.17.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.7-040807-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc', ip: '172.17.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.7-040807-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+org.educama.acceptancetests.pages.ShipmentsListPage.openShipments(ShipmentsListPage.java:35)
+org.educama.acceptancetests.steps.ShipmentsListSteps.opensThePage(ShipmentsListSteps.java:19)
+org.educama.acceptancetests.stepdefinitions.ShipmentsListStepDefinitions.givenThereAreNoOpenShipments(ShipmentsListStepDefinitions.java:21)
+</system-err></testcase><testcase name="List open shipments with 1 shipment"><failure message="Expected enabled element was not enabled&#10;Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'&#10;System info: host: 'testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc', ip: '172.17.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.7-040807-generic', java.version: '1.8.0_31'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc', ip: '172.17.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.7-040807-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc', ip: '172.17.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.7-040807-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+org.educama.acceptancetests.pages.ShipmentsListPage.openShipments(ShipmentsListPage.java:35)
+org.educama.acceptancetests.steps.ShipmentsListSteps.opensThePage(ShipmentsListSteps.java:19)
+org.educama.acceptancetests.stepdefinitions.ShipmentsListStepDefinitions.givenThereIsOneShipment(ShipmentsListStepDefinitions.java:40)
+</system-err></testcase></testsuite>

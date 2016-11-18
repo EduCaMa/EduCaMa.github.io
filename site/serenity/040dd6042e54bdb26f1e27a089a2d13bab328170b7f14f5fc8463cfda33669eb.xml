@@ -1,4 +1,4 @@
-<acceptance-test-run title="Display a message if the search string does not match any case" name="Display a message if the search string does not match any case" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="81" timestamp="2016-11-10T07:29:04.561Z">
+<acceptance-test-run title="Display a message if the search string does not match any case" name="Display a message if the search string does not match any case" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="12" timestamp="2016-11-18T09:02:43.004Z">
   <user-story id="search_for_shipments_by_customer" name="Search for shipments by customer" path="stories/manageShipments/searchForShipments/search_for_shipments_by_customer.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
@@ -11,7 +11,7 @@
   <test-step result="IGNORED" duration="0">
     <description>When I show the list of current shipments</description>
   </test-step>
-  <test-step result="PENDING" duration="1">
+  <test-step result="PENDING" duration="0">
     <description>And I enter &quot;abc&quot; into the search input field</description>
   </test-step>
   <test-step result="PENDING" duration="0">

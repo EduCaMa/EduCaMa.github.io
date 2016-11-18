@@ -60,8 +60,17 @@
         <li >
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+        <li >
+            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+        </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-11-2016 07:29</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-11-2016 09:03</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -106,10 +115,10 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-3x' title='FAILURE'></i></span>
                             <span class="test-case-title">
 
-                                <span class="success-color">List Open Shipments Without Shipments
+                                <span class="failing-color">List Open Shipments Without Shipments
                                     <span class="related-issue-title"></span>
                             </span>
                         </span>
@@ -144,11 +153,11 @@
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')" style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection0 success-icon" style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                                    <i class="fa fa-plus-square-o imgstepSection0 failure-icon" style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
                     <td>
@@ -160,20 +169,20 @@
 
                         </div>
                     </td>
-                        <td width="100" class="SUCCESS-text">
+                        <td width="100" class="FAILURE-text">
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">10.81s</span></td>
+                    <td width="100"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">10.73s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
                     <table id="stepSection0" style="display:none; width:100%">
 
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -181,51 +190,73 @@
 
                         </div>
                     </td>
-                        <td width="100" class="SUCCESS-text">
+                        <td width="100" class="FAILURE-text">
                                 <a href="a43c1310ece1db8f0a3f0c4524a3b4109f08d565761d3029770a04fe1941f6f2_screenshots.html#screenshots?screenshot=0">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="2bb57257a99b740ffff2adcfdb4c4730.png"
-                                         href="2bb57257a99b740ffff2adcfdb4c4730.png"
+                                    <img src="75170879a76218c79cdccc0c4d71324e.png"
+                                         href="75170879a76218c79cdccc0c4d71324e.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">9.66s</span></td>
+                    <td width="100"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">10.59s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">Open shipments list page</span>
-
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+                            <div class="error-message ellipsis"
+                                  title='Element should be enabled exception: Expected enabled element was not enabledBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc', ip: '172.17.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.7-040807-generic', java.version: '1.8.0_31'Driver info: driver.version: unknown'><pre>Element should be enabled exception: Expected enabled element was not enabledBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc', ip: '172.17.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.7-040807-generic', java.version: '1.8.0_31'Driver info: driver.version: unknown</pre></div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
+                            data-target="#stacktraceModal">
+                        View stack trace
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <h4>Expected enabled element was not enabled
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc', ip: '172.17.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.8.7-040807-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown</h4>
+                                org.educama.acceptancetests.pages.ShipmentsListPage.openShipments(ShipmentsListPage.java
+                                    :35) <br>
+                                org.educama.acceptancetests.steps.ShipmentsListSteps.opensThePage(ShipmentsListSteps.java
+                                    :19) <br>
+                                org.educama.acceptancetests.stepdefinitions.ShipmentsListStepDefinitions.givenThereAreNoOpenShipments(ShipmentsListStepDefinitions.java
+                                    :21) <br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
                         </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="a43c1310ece1db8f0a3f0c4524a3b4109f08d565761d3029770a04fe1941f6f2_screenshots.html#screenshots?screenshot=1">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="2bb57257a99b740ffff2adcfdb4c4730.png"
-                                         href="2bb57257a99b740ffff2adcfdb4c4730.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
+                    </div>
+                </div>
                         </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.48s</span></td>
-                </tr>
+                    </tr>
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
                         <a name="1"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -233,75 +264,32 @@
 
                         </div>
                     </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="a43c1310ece1db8f0a3f0c4524a3b4109f08d565761d3029770a04fe1941f6f2_screenshots.html#screenshots?screenshot=2">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="2bb57257a99b740ffff2adcfdb4c4730.png"
-                                         href="2bb57257a99b740ffff2adcfdb4c4730.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
+                        <td width="100" class="SKIPPED-text">
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.06s</span></td>
+                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
                     <td width="60" class="step-icon">
                         <a name="2"/>
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')" style="display:block">
-                                    <i class="fa fa-plus-square-o imgstepSection2 success-icon" style="margin-left: 20px; float:left;  padding-right:5px"></i>
-                            </a>
+                            <span style="margin-left: 20px; margin-right: 5px;"
+                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
-                               style="display:block;">
                             <span class="top-level-step">Then I see an empty list</span>
-                            </a>
 
                         </div>
                     </td>
-                        <td width="100" class="SUCCESS-text">
+                        <td width="100" class="SKIPPED-text">
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">2.15s</span></td>
+                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                    <tr>
-                    <td colspan="5">
-                    <table id="stepSection2" style="display:none; width:100%">
-
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">Checks the shipments list</span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="a43c1310ece1db8f0a3f0c4524a3b4109f08d565761d3029770a04fe1941f6f2_screenshots.html#screenshots?screenshot=3">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="2bb57257a99b740ffff2adcfdb4c4730.png"
-                                         href="2bb57257a99b740ffff2adcfdb4c4730.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">2.09s</span></td>
-                </tr>
-
-                    </table>
-                    </td>
-                    <tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
                         <td colspan="3"></td>
-                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>13.08s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>FAILURE</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>10.99s</em></span></td>
                 </tr>
 
             </table>

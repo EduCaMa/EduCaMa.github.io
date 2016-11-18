@@ -1,60 +1,31 @@
-<acceptance-test-run title="List open shipments with 1 shipment" name="List open shipments with 1 shipment" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5056" timestamp="2016-11-10T07:29:18.009Z" session-id="de71ebc8-ad8f-4eb7-8826-ad5f4d649aa1">
+<acceptance-test-run title="List open shipments with 1 shipment" name="List open shipments with 1 shipment" steps="3" successful="0" failures="1" skipped="2" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="8418" timestamp="2016-11-18T09:02:54.142Z" session-id="3c05e6c1-0ab7-4e64-aff7-c11054de12c1">
   <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
     <tag name="Manage shipments/Show list of shipments" type="feature"/>
     <tag name="Show list of shipments/Show current shipments" type="story"/>
   </tags>
-  <test-group name="Given There is 1 shipment" result="SUCCESS">
-    <screenshots>
-      <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
-    </screenshots>
-    <test-step result="SUCCESS" duration="1458">
+  <test-group name="Given There is 1 shipment" result="FAILURE">
+    <test-step result="FAILURE" duration="8394">
       <screenshots>
-        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+        <screenshot image="75170879a76218c79cdccc0c4d71324e.png" source="pagesource2062372272556303233.html.txt"/>
       </screenshots>
       <description>Opens the page</description>
-    </test-step>
-    <test-step result="SUCCESS" duration="226">
-      <screenshots>
-        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
-      </screenshots>
-      <description>Open shipments list page</description>
-    </test-step>
-    <test-step result="SUCCESS" duration="268">
-      <screenshots>
-        <screenshot image="a4bb335fbeb6b1ec03dcd24325623377.png"/>
-      </screenshots>
-      <description>Open add shipment modal</description>
-    </test-step>
-    <test-step result="SUCCESS" duration="368">
-      <screenshots>
-        <screenshot image="3c181d1dac26dcc4441595856f9be67d.png"/>
-      </screenshots>
-      <description>Add one shipment</description>
-    </test-step>
-    <test-step result="SUCCESS" duration="274">
-      <screenshots>
-        <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
-      </screenshots>
-      <description>Close add shipment modal</description>
+      <error>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc&apos;, ip: &apos;172.17.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.8.7-040807-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown</error>
+      <exception>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException:Expected enabled element was not enabled
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc&apos;, ip: &apos;172.17.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.8.7-040807-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown
+[org.educama.acceptancetests.pages.ShipmentsListPage.openShipments(ShipmentsListPage.java:35), org.educama.acceptancetests.steps.ShipmentsListSteps.opensThePage(ShipmentsListSteps.java:19), org.educama.acceptancetests.stepdefinitions.ShipmentsListStepDefinitions.givenThereIsOneShipment(ShipmentsListStepDefinitions.java:40)]</exception>
     </test-step>
   </test-group>
-  <test-step result="SUCCESS" duration="58">
-    <screenshots>
-      <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
-    </screenshots>
+  <test-step result="SKIPPED" duration="0">
     <description>When I show the list of current shipments</description>
   </test-step>
-  <test-group name="Then I see 1 shipment" result="SUCCESS">
-    <screenshots>
-      <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
-    </screenshots>
-    <test-step result="SUCCESS" duration="2104">
-      <screenshots>
-        <screenshot image="148d6f4fe4ccf8d54a9c22c7b41bd0cb.png"/>
-      </screenshots>
-      <description>Checks the shipment list for one shipment</description>
-    </test-step>
-  </test-group>
+  <test-step result="SKIPPED" duration="0">
+    <description>Then I see 1 shipment</description>
+  </test-step>
 </acceptance-test-run>
