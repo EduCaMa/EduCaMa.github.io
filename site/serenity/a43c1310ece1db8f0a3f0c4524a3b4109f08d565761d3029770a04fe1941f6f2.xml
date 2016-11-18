@@ -1,31 +1,42 @@
-<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="3" successful="0" failures="1" skipped="2" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="10990" timestamp="2016-11-18T09:02:43.069Z" session-id="3c05e6c1-0ab7-4e64-aff7-c11054de12c1">
+<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="7705" timestamp="2016-11-18T09:19:48.289Z" session-id="d9826303-3792-4eae-b8e0-ff4f467d58f2">
   <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
     <tag name="Manage shipments/Show list of shipments" type="feature"/>
     <tag name="Show list of shipments/Show current shipments" type="story"/>
   </tags>
-  <test-group name="Given There are no open shipments" result="FAILURE">
-    <test-step result="FAILURE" duration="10594">
+  <test-group name="Given There are no open shipments" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="4829">
       <screenshots>
-        <screenshot image="75170879a76218c79cdccc0c4d71324e.png" source="pagesource5765670717779831831.html.txt"/>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
       </screenshots>
       <description>Opens the page</description>
-      <error>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc&apos;, ip: &apos;172.17.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.8.7-040807-generic&apos;, java.version: &apos;1.8.0_31&apos;
-Driver info: driver.version: unknown</error>
-      <exception>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException:Expected enabled element was not enabled
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;testing-docker-7a35d281-6c51-44d4-9703-86e265f94adc&apos;, ip: &apos;172.17.0.4&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.8.7-040807-generic&apos;, java.version: &apos;1.8.0_31&apos;
-Driver info: driver.version: unknown
-[org.educama.acceptancetests.pages.ShipmentsListPage.openShipments(ShipmentsListPage.java:35), org.educama.acceptancetests.steps.ShipmentsListSteps.opensThePage(ShipmentsListSteps.java:19), org.educama.acceptancetests.stepdefinitions.ShipmentsListStepDefinitions.givenThereAreNoOpenShipments(ShipmentsListStepDefinitions.java:21)]</exception>
+    </test-step>
+    <test-step result="SUCCESS" duration="388">
+      <screenshots>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+      </screenshots>
+      <description>Open shipments list page</description>
     </test-step>
   </test-group>
-  <test-step result="SKIPPED" duration="1">
+  <test-step result="SUCCESS" duration="68">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
     <description>When I show the list of current shipments</description>
   </test-step>
-  <test-step result="SKIPPED" duration="1">
-    <description>Then I see an empty list</description>
-  </test-step>
+  <test-group name="Then I see an empty list" result="SUCCESS">
+    <screenshots>
+      <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="2101">
+      <screenshots>
+        <screenshot image="2bb57257a99b740ffff2adcfdb4c4730.png"/>
+      </screenshots>
+      <description>Checks the shipments list</description>
+    </test-step>
+  </test-group>
 </acceptance-test-run>
