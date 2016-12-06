@@ -1,4 +1,4 @@
-<acceptance-test-run title="List all tasks assigned to current user" name="List all tasks assigned to current user" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="38" timestamp="2016-12-03T19:36:16.126Z">
+<acceptance-test-run title="List all tasks assigned to current user" name="List all tasks assigned to current user" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="15" timestamp="2016-12-06T20:21:35.091Z">
   <user-story id="show_list_of_tasks_for_current_user" name="Show list of tasks for current user" path="stories/manageTasks/showListOfTasks/show_list_of_tasks_for_current_user.story"/>
   <tags>
     <tag name="Manage tasks" type="capability"/>
@@ -8,7 +8,7 @@
   <test-step result="PENDING" duration="1">
     <description>Given There are 5 tasks, 3 of them assigned to the current user</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>When I show the list of tasks</description>
   </test-step>
   <test-step result="PENDING" duration="0">
