@@ -1,4 +1,4 @@
-<acceptance-test-run title="Display a message if the search string does not match any case" name="Display a message if the search string does not match any case" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="13" timestamp="2016-12-06T20:21:35.331Z">
+<acceptance-test-run title="Display a message if the search string does not match any case" name="Display a message if the search string does not match any case" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="14" timestamp="2016-12-10T20:22:22.389Z">
   <user-story id="search_for_shipments_by_customer" name="Search for shipments by customer" path="stories/manageShipments/searchForShipments/search_for_shipments_by_customer.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>

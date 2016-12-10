@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open shipments with 5 shipments" name="List open shipments with 5 shipments" steps="3" successful="0" failures="0" skipped="0" ignored="1" pending="2" annotated-result="PENDING" result="PENDING" duration="12" timestamp="2016-12-06T20:21:35.393Z">
+<acceptance-test-run title="List open shipments with 5 shipments" name="List open shipments with 5 shipments" steps="3" successful="0" failures="0" skipped="0" ignored="1" pending="2" annotated-result="PENDING" result="PENDING" duration="13" timestamp="2016-12-10T20:22:22.465Z">
   <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>

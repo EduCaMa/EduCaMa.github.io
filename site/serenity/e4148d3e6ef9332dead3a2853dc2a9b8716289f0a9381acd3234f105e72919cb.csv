@@ -1,3 +1,3 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Show list of tasks for current user","Display a message if there is no task assigned to current user","PENDING","2016-12-06T20:21:35.109Z","0.0","0.02"
-"Show list of tasks for current user","List all tasks assigned to current user","PENDING","2016-12-06T20:21:35.091Z","0.0","0.02"
+"Show list of tasks for current user","Display a message if there is no task assigned to current user","PENDING","2016-12-10T20:22:22.111Z","0.0","0.03"
+"Show list of tasks for current user","List all tasks assigned to current user","PENDING","2016-12-10T20:22:22.070Z","0.0","0.04"
