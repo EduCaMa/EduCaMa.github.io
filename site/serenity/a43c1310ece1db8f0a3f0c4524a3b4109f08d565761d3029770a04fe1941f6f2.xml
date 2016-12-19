@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8386" timestamp="2016-12-19T10:23:13.194Z" session-id="52198570-4fb1-4202-a242-bbea608de45c">
+<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="9786" timestamp="2016-12-19T16:32:01.670Z" session-id="8989ffbd-6c9a-4de5-9ff5-2a2f0595d212">
   <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
@@ -9,20 +9,20 @@
     <screenshots>
       <screenshot image="e08bc49fca902192eaf504d1bf76c630.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="5561">
+    <test-step result="SUCCESS" duration="6747">
       <screenshots>
         <screenshot image="e08bc49fca902192eaf504d1bf76c630.png"/>
       </screenshots>
       <description>Opens the page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="446">
+    <test-step result="SUCCESS" duration="510">
       <screenshots>
         <screenshot image="e08bc49fca902192eaf504d1bf76c630.png"/>
       </screenshots>
       <description>Open shipments list page</description>
     </test-step>
   </test-group>
-  <test-step result="SUCCESS" duration="38">
+  <test-step result="SUCCESS" duration="72">
     <screenshots>
       <screenshot image="e08bc49fca902192eaf504d1bf76c630.png"/>
     </screenshots>
@@ -32,7 +32,7 @@
     <screenshots>
       <screenshot image="e08bc49fca902192eaf504d1bf76c630.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="2072">
+    <test-step result="SUCCESS" duration="2113">
       <screenshots>
         <screenshot image="e08bc49fca902192eaf504d1bf76c630.png"/>
       </screenshots>
