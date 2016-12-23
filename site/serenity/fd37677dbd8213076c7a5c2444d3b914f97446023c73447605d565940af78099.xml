@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open shipments with 1 shipment" name="List open shipments with 1 shipment" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="4407" timestamp="2016-12-21T11:43:45.248Z" session-id="948e8a2d-8041-49d8-b2b0-7b0d99520d01">
+<acceptance-test-run title="List open shipments with 1 shipment" name="List open shipments with 1 shipment" steps="7" successful="7" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5373" timestamp="2016-12-23T08:29:24.636Z" session-id="19f67b32-2cc2-4dd1-8bee-74793b604502">
   <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
@@ -9,38 +9,38 @@
     <screenshots>
       <screenshot image="6de625416d70c48827dc2f4596f7fe61.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="1302">
+    <test-step result="SUCCESS" duration="1631">
       <screenshots>
         <screenshot image="e08bc49fca902192eaf504d1bf76c630.png"/>
       </screenshots>
       <description>Opens the page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="183">
+    <test-step result="SUCCESS" duration="259">
       <screenshots>
         <screenshot image="e08bc49fca902192eaf504d1bf76c630.png"/>
       </screenshots>
       <description>Open shipments list page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="214">
+    <test-step result="SUCCESS" duration="224">
       <screenshots>
         <screenshot image="338778c31cf5e88cccc5d9896336f4a1.png"/>
       </screenshots>
       <description>Open add shipment modal</description>
     </test-step>
-    <test-step result="SUCCESS" duration="203">
+    <test-step result="SUCCESS" duration="318">
       <screenshots>
-        <screenshot image="4d4dea07d059a19dfffb1db9d13df00f.png"/>
+        <screenshot image="dbd6d980fc8fea3a6b1efa174f4d04df.png"/>
       </screenshots>
       <description>Add one shipment</description>
     </test-step>
-    <test-step result="SUCCESS" duration="217">
+    <test-step result="SUCCESS" duration="515">
       <screenshots>
         <screenshot image="6de625416d70c48827dc2f4596f7fe61.png"/>
       </screenshots>
       <description>Close add shipment modal</description>
     </test-step>
   </test-group>
-  <test-step result="SUCCESS" duration="44">
+  <test-step result="SUCCESS" duration="94">
     <screenshots>
       <screenshot image="6de625416d70c48827dc2f4596f7fe61.png"/>
     </screenshots>
@@ -50,7 +50,7 @@
     <screenshots>
       <screenshot image="6de625416d70c48827dc2f4596f7fe61.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="2087">
+    <test-step result="SUCCESS" duration="2138">
       <screenshots>
         <screenshot image="6de625416d70c48827dc2f4596f7fe61.png"/>
       </screenshots>
