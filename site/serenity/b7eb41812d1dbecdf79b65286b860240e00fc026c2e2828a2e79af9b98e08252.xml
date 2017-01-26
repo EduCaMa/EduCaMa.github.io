@@ -1,14 +1,14 @@
-<acceptance-test-run title="Create a new shipment based on minimal required information" name="Create a new shipment based on minimal required information" steps="5" successful="0" failures="0" skipped="0" ignored="0" pending="5" annotated-result="PENDING" result="PENDING" duration="103" timestamp="2017-01-20T08:31:52.999Z">
+<acceptance-test-run title="Create a new shipment based on minimal required information" name="Create a new shipment based on minimal required information" steps="5" successful="0" failures="0" skipped="0" ignored="0" pending="5" annotated-result="PENDING" result="PENDING" duration="74" timestamp="2017-01-26T08:45:51.126Z">
   <user-story id="create_shipment_ordered_by_phone" name="Create shipment ordered by phone" path="stories/createShipment/createNewShipment/create_shipment_ordered_by_phone.story"/>
   <tags>
     <tag name="Create shipment" type="capability"/>
     <tag name="Create shipment/Create new shipment" type="feature"/>
     <tag name="Create new shipment/Create shipment ordered by phone" type="story"/>
   </tags>
-  <test-step result="PENDING" duration="2">
+  <test-step result="PENDING" duration="1">
     <description>Given Tom is logged in to the application and the shipment list is displayed</description>
   </test-step>
-  <test-step result="PENDING" duration="1">
+  <test-step result="PENDING" duration="0">
     <description>When Tom opens the dialog to create a new shipment</description>
   </test-step>
   <test-step result="PENDING" duration="0">

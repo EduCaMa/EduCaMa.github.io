@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8894" timestamp="2017-01-20T08:31:53.503Z" session-id="ce8a8a6a-a977-49be-b9aa-91469509ab21">
+<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8492" timestamp="2017-01-26T08:45:51.489Z" session-id="ec966fa4-7563-4a78-aac4-73c9072ba42e">
   <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
@@ -7,28 +7,28 @@
   </tags>
   <test-group name="Given There are no open shipments" result="SUCCESS">
     <screenshots>
-      <screenshot image="68b75c667e6307f1e29c8ec8628440c0.png"/>
+      <screenshot image="a0e6827cd0bec4f2c86882f25ace6e7b.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="6114">
+    <test-step result="SUCCESS" duration="5769">
       <screenshots>
-        <screenshot image="68b75c667e6307f1e29c8ec8628440c0.png"/>
+        <screenshot image="3a0d5dc5db02f81143fad62feba02438.png"/>
       </screenshots>
       <description>Open shipments list page</description>
     </test-step>
   </test-group>
-  <test-step result="SUCCESS" duration="47">
+  <test-step result="SUCCESS" duration="103">
     <screenshots>
-      <screenshot image="68b75c667e6307f1e29c8ec8628440c0.png"/>
+      <screenshot image="a0e6827cd0bec4f2c86882f25ace6e7b.png"/>
     </screenshots>
     <description>When I show the list of current shipments</description>
   </test-step>
   <test-group name="Then I see an empty list" result="SUCCESS">
     <screenshots>
-      <screenshot image="68b75c667e6307f1e29c8ec8628440c0.png"/>
+      <screenshot image="a0e6827cd0bec4f2c86882f25ace6e7b.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="2179">
+    <test-step result="SUCCESS" duration="2151">
       <screenshots>
-        <screenshot image="68b75c667e6307f1e29c8ec8628440c0.png"/>
+        <screenshot image="a0e6827cd0bec4f2c86882f25ace6e7b.png"/>
       </screenshots>
       <description>Checks the shipments list</description>
     </test-step>
