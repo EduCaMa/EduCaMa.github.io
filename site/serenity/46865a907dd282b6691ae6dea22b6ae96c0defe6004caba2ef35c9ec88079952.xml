@@ -1,4 +1,4 @@
-<acceptance-test-run title="Search for shipments by exact customer name" name="Search for shipments by exact customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="17" timestamp="2017-01-26T08:45:51.413Z">
+<acceptance-test-run title="Search for shipments by exact customer name" name="Search for shipments by exact customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="18" timestamp="2017-01-27T07:48:59.390Z">
   <user-story id="search_for_shipments_by_customer" name="Search for shipments by customer" path="stories/manageShipments/searchForShipments/search_for_shipments_by_customer.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
@@ -11,7 +11,7 @@
   <test-step result="IGNORED" duration="1">
     <description>When I show the list of current shipments</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>And I enter &quot;MyStuff&quot; into the search input field</description>
   </test-step>
   <test-step result="PENDING" duration="0">
