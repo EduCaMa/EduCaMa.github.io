@@ -1,4 +1,4 @@
-<acceptance-test-run title="Search for shipments by substrings of customer name" name="Search for shipments by substrings of customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="22" timestamp="2017-02-02T12:06:17.000Z">
+<acceptance-test-run title="Search for shipments by substrings of customer name" name="Search for shipments by substrings of customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="24" timestamp="2017-02-02T14:18:04.303Z">
   <user-story id="search_for_shipments_by_customer" name="Search for shipments by customer" path="stories/manageShipments/searchForShipments/search_for_shipments_by_customer.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
