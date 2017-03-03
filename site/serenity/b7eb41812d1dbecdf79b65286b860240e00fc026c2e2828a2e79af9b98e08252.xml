@@ -1,4 +1,4 @@
-<acceptance-test-run title="Create a new shipment based on minimal required information" name="Create a new shipment based on minimal required information" steps="5" successful="0" failures="0" skipped="0" ignored="0" pending="5" annotated-result="PENDING" result="PENDING" duration="114" timestamp="2017-02-24T16:49:52.360Z">
+<acceptance-test-run title="Create a new shipment based on minimal required information" name="Create a new shipment based on minimal required information" steps="5" successful="0" failures="0" skipped="0" ignored="0" pending="5" annotated-result="PENDING" result="PENDING" duration="77" timestamp="2017-03-03T07:57:10.077Z">
   <user-story id="create_shipment_ordered_by_phone" name="Create shipment ordered by phone" path="stories/createShipment/createNewShipment/create_shipment_ordered_by_phone.story"/>
   <tags>
     <tag name="Create shipment" type="capability"/>
@@ -6,18 +6,18 @@
     <tag name="Create new shipment/Create shipment ordered by phone" type="story"/>
   </tags>
   <test-step result="PENDING" duration="1">
-    <description>Given Tom is logged in to the application and the shipment list is displayed</description>
+    <description>Given Tom views the shipment list</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>When Tom opens the dialog to create a new shipment</description>
   </test-step>
-  <test-step result="PENDING" duration="11">
+  <test-step result="PENDING" duration="6">
     <description>And Tom enters Schrauben Schmitt as customer name, Echterdingen as pickup address and Tokio as delivery address</description>
   </test-step>
-  <test-step result="PENDING" duration="1">
+  <test-step result="PENDING" duration="0">
     <description>Then Tom sees the list of current shipments, including the shipment for customer Schrauben Schmitt</description>
   </test-step>
-  <test-step result="PENDING" duration="1">
-    <description>And a shipment id has been created</description>
+  <test-step result="PENDING" duration="0">
+    <description>And a shipment has been created</description>
   </test-step>
 </acceptance-test-run>
