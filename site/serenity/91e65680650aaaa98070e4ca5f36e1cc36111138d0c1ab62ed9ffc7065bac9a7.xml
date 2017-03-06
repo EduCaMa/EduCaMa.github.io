@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open shipments with 5 shipments" name="List open shipments with 5 shipments" steps="3" successful="0" failures="0" skipped="0" ignored="1" pending="2" annotated-result="PENDING" result="PENDING" duration="10" timestamp="2017-03-03T07:57:10.544Z">
+<acceptance-test-run title="List open shipments with 5 shipments" name="List open shipments with 5 shipments" steps="3" successful="0" failures="0" skipped="0" ignored="1" pending="2" annotated-result="PENDING" result="PENDING" duration="11" timestamp="2017-03-06T12:41:34.310Z">
   <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
@@ -8,10 +8,10 @@
   <test-step result="PENDING" duration="0">
     <description>Given There are 5 shipments</description>
   </test-step>
-  <test-step result="IGNORED" duration="1">
+  <test-step result="IGNORED" duration="0">
     <description>When I show the list of current shipments</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>Then I see 5 shipments</description>
   </test-step>
 </acceptance-test-run>
