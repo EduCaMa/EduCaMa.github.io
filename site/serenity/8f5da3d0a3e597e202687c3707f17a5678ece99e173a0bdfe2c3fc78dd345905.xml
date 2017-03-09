@@ -1,4 +1,4 @@
-<acceptance-test-run title="Show the details of a shipment" name="Show the details of a shipment" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="20" timestamp="2017-03-06T12:41:34.212Z">
+<acceptance-test-run title="Show the details of a shipment" name="Show the details of a shipment" steps="6" successful="0" failures="0" skipped="0" ignored="0" pending="6" annotated-result="PENDING" result="PENDING" duration="15" timestamp="2017-03-09T07:50:34.492Z">
   <user-story id="show_details_of_a_shipment" name="Show details of a shipment" path="stories/workOnShipment/showShipmentDetails/show_details_of_a_shipment.story"/>
   <tags>
     <tag name="Work on shipment" type="capability"/>
@@ -8,10 +8,10 @@
   <test-step result="PENDING" duration="0">
     <description>Given Tom reviews the list of current shipments</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>When Tom selects the shipment for customer MyStuff</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>Then Tom sees the shipment details</description>
   </test-step>
   <test-step result="PENDING" duration="0">
@@ -20,7 +20,7 @@
   <test-step result="PENDING" duration="0">
     <description>And Tom sees the active tasks for this shipment</description>
   </test-step>
-  <test-step result="PENDING" duration="1">
+  <test-step result="PENDING" duration="0">
     <description>And Tom sees the completed tasks for this shipment</description>
   </test-step>
 </acceptance-test-run>
