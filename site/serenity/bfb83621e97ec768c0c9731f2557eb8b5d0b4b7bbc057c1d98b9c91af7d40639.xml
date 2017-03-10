@@ -1,4 +1,4 @@
-<acceptance-test-run title="Create a new shipment with all information" name="Create a new shipment with all information" steps="28" successful="0" failures="0" skipped="0" ignored="0" pending="28" annotated-result="PENDING" result="PENDING" duration="112" timestamp="2017-03-10T08:37:35.202Z">
+<acceptance-test-run title="Create a new shipment with all information" name="Create a new shipment with all information" steps="28" successful="0" failures="0" skipped="0" ignored="0" pending="28" annotated-result="PENDING" result="PENDING" duration="613" timestamp="2017-03-10T08:52:05.739Z">
   <user-story id="create_shipment_ordered_by_phone" name="Create shipment ordered by phone" path="stories/createShipment/createNewShipment/create_shipment_ordered_by_phone.story"/>
   <tags>
     <tag name="Create shipment" type="capability"/>
@@ -73,22 +73,22 @@
     </rows>
   </examples>
   <test-group name="[1] {persona=Tom, customer_name=Schrauben Schmitt, pickup_address=Echterdingen, delivery_address=Tokio, number_of_items=4, weight=1350, capacity=5,5, goods_type=normal, description=new material, list_of_services=flight}" result="PENDING">
-    <test-step result="PENDING" duration="1">
+    <test-step result="PENDING" duration="3">
       <description>Given &lt;persona&gt; views the shipment list</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="2">
       <description>When &lt;persona&gt; opens the dialog to create a new shipment</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="3">
       <description>And &lt;persona&gt; enters &lt;customer_name&gt;, &lt;pickup_address&gt; and &lt;delivery_address&gt;</description>
     </test-step>
-    <test-step result="PENDING" duration="1">
+    <test-step result="PENDING" duration="0">
       <description>And &lt;persona&gt; enters &lt;number_of_items&gt;, &lt;weight&gt;, &lt;capacity&gt;, declared as &lt;goods_type&gt; and &lt;description&gt;</description>
     </test-step>
     <test-step result="PENDING" duration="0">
       <description>And &lt;persona&gt; selects the following &lt;list_of_services&gt;</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="1">
       <description>Then &lt;persona&gt; sees the list of current shipments, including the shipment for &lt;customer&gt;</description>
     </test-step>
     <test-step result="PENDING" duration="1">
@@ -96,71 +96,71 @@
     </test-step>
   </test-group>
   <test-group name="[2] {persona=Tom, customer_name=Schrauben Schmitt, pickup_address=Echterdingen, delivery_address=Tokio, number_of_items=4, weight=1350, capacity=5,5, goods_type=dangerous, description=new material, list_of_services=flight}" result="PENDING">
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="17">
       <description>Given &lt;persona&gt; views the shipment list</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="3">
       <description>When &lt;persona&gt; opens the dialog to create a new shipment</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="7">
       <description>And &lt;persona&gt; enters &lt;customer_name&gt;, &lt;pickup_address&gt; and &lt;delivery_address&gt;</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="1">
       <description>And &lt;persona&gt; enters &lt;number_of_items&gt;, &lt;weight&gt;, &lt;capacity&gt;, declared as &lt;goods_type&gt; and &lt;description&gt;</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="4">
       <description>And &lt;persona&gt; selects the following &lt;list_of_services&gt;</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="6">
       <description>Then &lt;persona&gt; sees the list of current shipments, including the shipment for &lt;customer&gt;</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="15">
       <description>And a shipment has been created</description>
     </test-step>
   </test-group>
   <test-group name="[3] {persona=Tom, customer_name=Schrauben Schmitt, pickup_address=Echterdingen, delivery_address=Tokio, number_of_items=4, weight=1350, capacity=5,5, goods_type=normal, description=new material, list_of_services=precarriage,export credit insurance,export customs clearance,flight,import customs clearance,import credit insurance,postcarriage}" result="PENDING">
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="1">
       <description>Given &lt;persona&gt; views the shipment list</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="1">
       <description>When &lt;persona&gt; opens the dialog to create a new shipment</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="1">
       <description>And &lt;persona&gt; enters &lt;customer_name&gt;, &lt;pickup_address&gt; and &lt;delivery_address&gt;</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="1">
+      <description>And &lt;persona&gt; enters &lt;number_of_items&gt;, &lt;weight&gt;, &lt;capacity&gt;, declared as &lt;goods_type&gt; and &lt;description&gt;</description>
+    </test-step>
+    <test-step result="PENDING" duration="2">
+      <description>And &lt;persona&gt; selects the following &lt;list_of_services&gt;</description>
+    </test-step>
+    <test-step result="PENDING" duration="3">
+      <description>Then &lt;persona&gt; sees the list of current shipments, including the shipment for &lt;customer&gt;</description>
+    </test-step>
+    <test-step result="PENDING" duration="1">
+      <description>And a shipment has been created</description>
+    </test-step>
+  </test-group>
+  <test-group name="[4] {persona=Tom, customer_name=Schrauben Schmitt, pickup_address=Echterdingen, delivery_address=Tokio, number_of_items=4, weight=1350, capacity=5,5, goods_type=normal, description=new material, list_of_services=precarriage,flight,postcarriage}" result="PENDING">
+    <test-step result="PENDING" duration="1">
+      <description>Given &lt;persona&gt; views the shipment list</description>
+    </test-step>
+    <test-step result="PENDING" duration="1">
+      <description>When &lt;persona&gt; opens the dialog to create a new shipment</description>
+    </test-step>
+    <test-step result="PENDING" duration="1">
+      <description>And &lt;persona&gt; enters &lt;customer_name&gt;, &lt;pickup_address&gt; and &lt;delivery_address&gt;</description>
+    </test-step>
+    <test-step result="PENDING" duration="1">
       <description>And &lt;persona&gt; enters &lt;number_of_items&gt;, &lt;weight&gt;, &lt;capacity&gt;, declared as &lt;goods_type&gt; and &lt;description&gt;</description>
     </test-step>
     <test-step result="PENDING" duration="1">
       <description>And &lt;persona&gt; selects the following &lt;list_of_services&gt;</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="1">
       <description>Then &lt;persona&gt; sees the list of current shipments, including the shipment for &lt;customer&gt;</description>
     </test-step>
-    <test-step result="PENDING" duration="0">
-      <description>And a shipment has been created</description>
-    </test-step>
-  </test-group>
-  <test-group name="[4] {persona=Tom, customer_name=Schrauben Schmitt, pickup_address=Echterdingen, delivery_address=Tokio, number_of_items=4, weight=1350, capacity=5,5, goods_type=normal, description=new material, list_of_services=precarriage,flight,postcarriage}" result="PENDING">
-    <test-step result="PENDING" duration="0">
-      <description>Given &lt;persona&gt; views the shipment list</description>
-    </test-step>
-    <test-step result="PENDING" duration="0">
-      <description>When &lt;persona&gt; opens the dialog to create a new shipment</description>
-    </test-step>
-    <test-step result="PENDING" duration="0">
-      <description>And &lt;persona&gt; enters &lt;customer_name&gt;, &lt;pickup_address&gt; and &lt;delivery_address&gt;</description>
-    </test-step>
-    <test-step result="PENDING" duration="0">
-      <description>And &lt;persona&gt; enters &lt;number_of_items&gt;, &lt;weight&gt;, &lt;capacity&gt;, declared as &lt;goods_type&gt; and &lt;description&gt;</description>
-    </test-step>
-    <test-step result="PENDING" duration="0">
-      <description>And &lt;persona&gt; selects the following &lt;list_of_services&gt;</description>
-    </test-step>
-    <test-step result="PENDING" duration="0">
-      <description>Then &lt;persona&gt; sees the list of current shipments, including the shipment for &lt;customer&gt;</description>
-    </test-step>
-    <test-step result="PENDING" duration="0">
+    <test-step result="PENDING" duration="2">
       <description>And a shipment has been created</description>
     </test-step>
   </test-group>

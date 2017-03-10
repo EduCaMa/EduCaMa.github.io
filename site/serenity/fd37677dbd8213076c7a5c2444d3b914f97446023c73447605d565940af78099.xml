@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open shipments with 1 shipment" name="List open shipments with 1 shipment" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="7130" timestamp="2017-03-10T08:37:47.169Z" session-id="2687a44b-c553-419c-bf59-ad5ee4925ea1">
+<acceptance-test-run title="List open shipments with 1 shipment" name="List open shipments with 1 shipment" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="13003" timestamp="2017-03-10T08:52:29.313Z" session-id="80da5f12-a285-4631-b5ae-f2385eafe862">
   <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
@@ -7,34 +7,34 @@
   </tags>
   <test-group name="Given There is 1 shipment" result="SUCCESS">
     <screenshots>
-      <screenshot image="7af76f2681d66ce277a79c14c2f45b6e.png"/>
+      <screenshot image="5347625cc2158a5cdabc7ec8d4b2d283.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="3459">
+    <test-step result="SUCCESS" duration="7332">
       <screenshots>
-        <screenshot image="9f8399b0c5a61b0c5d63d9a5049e8310.png"/>
+        <screenshot image="4e8bde11e4a59abeafd02aac5badb4d2.png"/>
       </screenshots>
       <description>Open shipments list page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1169">
+    <test-step result="SUCCESS" duration="2360">
       <screenshots>
-        <screenshot image="18a05f582c1f095bba23c4964ec7d170.png"/>
+        <screenshot image="1fe741133239c31a1695c7e1f5c45dea.png"/>
       </screenshots>
       <description>Add one shipment</description>
     </test-step>
   </test-group>
-  <test-step result="SUCCESS" duration="115">
+  <test-step result="SUCCESS" duration="254">
     <screenshots>
-      <screenshot image="cc3f0251c778af05af9d7e474b3292ef.png"/>
+      <screenshot image="81f11046823d43b47f11a6500869ddb1.png"/>
     </screenshots>
     <description>When I show the list of current shipments</description>
   </test-step>
   <test-group name="Then I see 1 shipment" result="SUCCESS">
     <screenshots>
-      <screenshot image="df308a4024e1a75c8df03cbaf8f6f770.png"/>
+      <screenshot image="bc30b01100b1127f9d8da9d473ac466b.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="2106">
+    <test-step result="SUCCESS" duration="2375">
       <screenshots>
-        <screenshot image="df308a4024e1a75c8df03cbaf8f6f770.png"/>
+        <screenshot image="bc30b01100b1127f9d8da9d473ac466b.png"/>
       </screenshots>
       <description>Checks the shipment list for one shipment</description>
     </test-step>
