@@ -1,4 +1,4 @@
-<acceptance-test-run title="Search for shipments by substrings of customer name" name="Search for shipments by substrings of customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="31" timestamp="2017-03-14T16:50:24.363Z">
+<acceptance-test-run title="Search for shipments by substrings of customer name" name="Search for shipments by substrings of customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="22" timestamp="2017-03-14T17:13:18.098Z">
   <user-story id="search_for_shipments_by_customer" name="Search for shipments by customer" path="stories/manageShipments/searchForShipments/search_for_shipments_by_customer.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
@@ -8,7 +8,7 @@
   <test-step result="PENDING" duration="0">
     <description>Given There are 5 shipments, one from customer MyStuff, one from customer MySofa and 3 from customer Stuff24</description>
   </test-step>
-  <test-step result="IGNORED" duration="12">
+  <test-step result="IGNORED" duration="9">
     <description>When I show the list of current shipments</description>
   </test-step>
   <test-step result="PENDING" duration="0">

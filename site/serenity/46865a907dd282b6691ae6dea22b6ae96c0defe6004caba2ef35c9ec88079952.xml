@@ -1,4 +1,4 @@
-<acceptance-test-run title="Search for shipments by exact customer name" name="Search for shipments by exact customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="15" timestamp="2017-03-14T16:50:24.347Z">
+<acceptance-test-run title="Search for shipments by exact customer name" name="Search for shipments by exact customer name" steps="4" successful="0" failures="0" skipped="0" ignored="1" pending="3" annotated-result="PENDING" result="PENDING" duration="14" timestamp="2017-03-14T17:13:18.083Z">
   <user-story id="search_for_shipments_by_customer" name="Search for shipments by customer" path="stories/manageShipments/searchForShipments/search_for_shipments_by_customer.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
