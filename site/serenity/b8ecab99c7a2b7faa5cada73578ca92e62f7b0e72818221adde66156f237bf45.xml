@@ -1,4 +1,4 @@
-<acceptance-test-run title="Display a message if there is no task assigned to current user" name="Display a message if there is no task assigned to current user" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="11" timestamp="2017-03-14T17:13:18.031Z">
+<acceptance-test-run title="Display a message if there is no task assigned to current user" name="Display a message if there is no task assigned to current user" steps="3" successful="0" failures="0" skipped="0" ignored="0" pending="3" annotated-result="PENDING" result="PENDING" duration="15" timestamp="2017-03-17T11:28:03.907Z">
   <user-story id="show_list_of_tasks_for_current_user" name="Show list of tasks for current user" path="stories/manageTasks/showListOfTasks/show_list_of_tasks_for_current_user.story"/>
   <tags>
     <tag name="Manage tasks" type="capability"/>
@@ -8,7 +8,7 @@
   <test-step result="PENDING" duration="0">
     <description>Given there are 2 tasks with name &apos;Check shipment&apos; assigned to Jerry</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>When Tom requests the list of tasks</description>
   </test-step>
   <test-step result="PENDING" duration="0">
