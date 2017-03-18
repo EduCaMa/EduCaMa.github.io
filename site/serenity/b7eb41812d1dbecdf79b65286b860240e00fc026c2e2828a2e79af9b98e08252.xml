@@ -1,4 +1,4 @@
-<acceptance-test-run title="Create a new shipment based on minimal required information" name="Create a new shipment based on minimal required information" steps="5" successful="0" failures="0" skipped="0" ignored="0" pending="5" annotated-result="PENDING" result="PENDING" duration="85" timestamp="2017-03-17T11:28:03.521Z">
+<acceptance-test-run title="Create a new shipment based on minimal required information" name="Create a new shipment based on minimal required information" steps="5" successful="0" failures="0" skipped="0" ignored="0" pending="5" annotated-result="PENDING" result="PENDING" duration="72" timestamp="2017-03-18T16:49:41.457Z">
   <user-story id="create_shipment_ordered_by_phone" name="Create shipment ordered by phone" path="stories/createShipment/createNewShipment/create_shipment_ordered_by_phone.story"/>
   <tags>
     <tag name="Create shipment" type="capability"/>
@@ -14,10 +14,10 @@
   <test-step result="PENDING" duration="5">
     <description>And Tom enters Schrauben Schmitt as customer name, Echterdingen as pickup address and Tokio as delivery address</description>
   </test-step>
-  <test-step result="PENDING" duration="1">
+  <test-step result="PENDING" duration="0">
     <description>Then Tom sees the list of current shipments, including the shipment for customer Schrauben Schmitt</description>
   </test-step>
-  <test-step result="PENDING" duration="0">
+  <test-step result="PENDING" duration="1">
     <description>And a shipment has been created</description>
   </test-step>
 </acceptance-test-run>

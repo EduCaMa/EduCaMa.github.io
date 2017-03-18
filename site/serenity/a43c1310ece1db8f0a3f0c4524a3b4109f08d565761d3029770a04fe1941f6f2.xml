@@ -1,4 +1,4 @@
-<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="10581" timestamp="2017-03-17T11:28:04.075Z" session-id="1d90d400-21a7-46fb-b664-9e52af5108e3">
+<acceptance-test-run title="List open shipments without shipments" name="List open shipments without shipments" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="8555" timestamp="2017-03-18T16:49:41.962Z" session-id="6aabb0f0-d64f-4e09-9c56-e436cc1a36e3">
   <user-story id="show_current_shipments" name="Show current shipments" path="stories/manageShipments/showListOfShipments/show_current_shipments.story"/>
   <tags>
     <tag name="Manage shipments" type="capability"/>
@@ -9,14 +9,14 @@
     <screenshots>
       <screenshot image="4e8bde11e4a59abeafd02aac5badb4d2.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="7666">
+    <test-step result="SUCCESS" duration="5891">
       <screenshots>
         <screenshot image="4e8bde11e4a59abeafd02aac5badb4d2.png"/>
       </screenshots>
       <description>Open shipments list page</description>
     </test-step>
   </test-group>
-  <test-step result="SUCCESS" duration="51">
+  <test-step result="SUCCESS" duration="42">
     <screenshots>
       <screenshot image="4e8bde11e4a59abeafd02aac5badb4d2.png"/>
     </screenshots>
@@ -26,7 +26,7 @@
     <screenshots>
       <screenshot image="4e8bde11e4a59abeafd02aac5badb4d2.png"/>
     </screenshots>
-    <test-step result="SUCCESS" duration="2203">
+    <test-step result="SUCCESS" duration="2153">
       <screenshots>
         <screenshot image="4e8bde11e4a59abeafd02aac5badb4d2.png"/>
       </screenshots>
