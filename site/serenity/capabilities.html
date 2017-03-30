@@ -31,28 +31,28 @@
 
 
 
+
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 0.2],
-                ['Pending', 0.8],
-                ['Ignored', 0],
+                ['Passing', 0],
+                ['Pending', 4],
+                ['Ignored', 1],
                 ['Failing', 0],
                 ['Errors',  0],
-                ['Compromised Tests',  0],
+                ['Compromised',  0],
+                ['Untested',  0],
             ]
         ], {
             gridPadding: {top: 0, bottom: 38, left: 0, right: 0},
-            seriesColors: ['#30cb23',
-                
+            seriesColors: [
+                '#30cb23',
                 '#a2f2f2',
-                
                 '#eeeadd',
-                
                 '#f8001f',
-                
                 '#fc6e1f',
-                'fuchsia'],
+                'fuchsia',
+                'darkgrey'],
             seriesDefaults: {
                 renderer: $.jqplot.PieRenderer,
                 trendline: {show: false},
@@ -68,11 +68,13 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '20% requirements tested successfully'},
-                {label: '80% requirements untested'},
-                {label: '0%} requirements failing'},
-                {label: '0%} requirements with errors'},
-                {label: '0%} requirements with compromised tests'}
+                {label: '0 requirements tested successfully'},
+                {label: '4 requirements pending'},
+                {label: '1} requirements skipped'},
+                {label: '0} requirements with failures'},
+                {label: '0} requirements with errors'},
+                {label: '0} requirements compromised'},
+                {label: '0} requirements untested'},
             ]
         });
         // Results table
@@ -99,7 +101,7 @@
             ],
             "pageLength": 25
         });
-        $("#tabs").tabs();
+        $("#requirements-tabs").tabs();
         $("#test-tabs").tabs();
     })
     ;
@@ -139,7 +141,7 @@
     <div id="contenttop">
         <div class="middlebg">
             <span class="breadcrumbs">
-            <a href='index.html'>Home</a>
+            <a href='index.html'>Home</a> > <a href="capabilities.html">Requirements</a>
             </span>
         </div>
         <div class="rightbg"></div>
@@ -158,16 +160,16 @@
             <a href="#"><i class="fa fa-book"></i> Requirements</a>
         </li>
         <li >
-            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+            <a href="e3a5a59a6d792683cf33d050ee0f6f92.html"><i class="fa fa-comments-o"></i> Capabilities</a>
         </li>
         <li >
-            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+            <a href="d782c44557441225cc92a5e35bf4b23b.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
         <li >
-            <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
+            <a href="5f5dee50b3955739bfb580c79f480d2e.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-03-2017 15:26</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-03-2017 15:11</span>
     <br style="clear:left"/>
 </div>
 
@@ -193,44 +195,41 @@
                                         <th>Fail&nbsp;<i class="icon-thumbs-down"></i></th>
                                         <th>Pending&nbsp;<i class="icon-calendar"></i></th>
                                         <th>Ignored&nbsp;<i class="icon-ban-circle"></i></th>
-                                        <th>Untested&nbsp;<i class="icon-question"></i></th>
                                     </tr>
                                 </head>
                                 <body>
                                     <tr>
-                                        <td class="summary-leading-column">Capabilities</td>
+                                        <td class="summary-leading-column"><a href="#requirements-tabs">Capabilities</a></td>
                                         <td>4</td>
                                         <td>0</td>
                                         <td>0</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summary-leading-column"><a href="d782c44557441225cc92a5e35bf4b23b.html">Features</a></td>
+                                        <td>5</td>
+                                        <td>0</td>
+                                        <td>0</td>
                                         <td>4</td>
-                                        <td>0</td>
-                                        <td>0</td>
+                                        <td>1</td>
                                     </tr>
                                     <tr>
-                                        <td class="summary-leading-column">Features</td>
+                                        <td class="summary-leading-column"><a href="5f5dee50b3955739bfb580c79f480d2e.html">Stories</a></td>
                                         <td>5</td>
                                         <td>0</td>
                                         <td>0</td>
-                                        <td>5</td>
-                                        <td>0</td>
-                                        <td>0</td>
+                                        <td>4</td>
+                                        <td>1</td>
                                     </tr>
-                                    <tr>
-                                        <td class="summary-leading-column">Stories</td>
-                                        <td>5</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                        <td>5</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
+
                                 <tr>
-                                    <td class="summary-leading-column">Acceptance Criteria (tests)</td>
-                                    <td>10</td>
+                                    <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria (tests)</a></td>
+                                    <td>14</td>
                                     <td>2</td>
                                     <td>0</td>
-                                    <td>8</td>
-                                    <td>0</td>
+                                    <td>10</td>
+                                    <td>2</td>
                                     <td></td>
                                 </tr>
                                 </body>
@@ -257,11 +256,11 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>10</td>
-            <td>2 (20%)</td>
+            <td>14</td>
+            <td>2 (14%)</td>
             <td>0 (0%)</td>
-            <td>8 (80%)</td>
-            <td>0 (0%)</td>
+            <td>10 (71%)</td>
+            <td>2 (14%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Manual</td>
@@ -273,15 +272,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>10</td>
-            <td>2 (20%)</td>
+            <td>14</td>
+            <td>2 (14%)</td>
             <td>0 (0%)</td>
-            <td>8 (80%)</td>
-            <td>0 (0%)</td>
+            <td>10 (71%)</td>
+            <td>2 (14%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">16 seconds</td>
+                <td colspan="5">18 seconds</td>
         </tr>
         </body>
     </table>
@@ -290,7 +289,7 @@
                 </div>
                 <div class="clr"></div>
 
-                <div id="tabs">
+                <div id="requirements-tabs">
                         <ul>
                                 <li><a href="#tabs-1">
                                 Capabilities (4)
@@ -298,6 +297,8 @@
                         </ul>
                         <div id="tabs-1" class="capabilities-table">
                             <div id="tabs-1" class="capabilities-table">
+
+
 <div id="req_list_tests" class="table">
     <div class="test-results">
         <table id="req-results-table">
@@ -307,38 +308,15 @@
                 <th width="65" class="test-results-heading">ID</th>
                 <th width="525" class="test-results-heading">Capability</th>
                     <th width="65" class="test-results-heading">Features</th>
-                <th class="test-results-heading" width="75px">Auto.<br/>Tests</th>
-                <th class="test-results-heading" width="25px"><i class="fa fa-check-square-o"
-                                                                 title="Tests passed (automated)"></i>
-                </th>
-                <th class="test-results-heading" width="25px"><i class="fa fa-square-o"
-                                                                 title="Tests skipped or pending (automated)">
-                </th>
-                <th class="test-results-heading" width="25px"><i class="fa fa-times-circle"
-                                                                 title="Tests failed (automated)"></th>
-                <th class="test-results-heading" width="25px"><i
-                        class="fa fa-exclamation-triangle"
-                        title="Tests failed with an error (automated)"></th>
-                <th class="test-results-heading" width="25px">
-                    <i class="fa fa-chain-broken fa-lg" title="Tests compromised"></i>
-                </th>
+                <th class="test-results-heading" width="75px">Automated<br/>Tests</th>
                     <th class="test-results-heading" width="75px">Manual<br/>Tests</th>
-                    <th class="test-results-heading" width="25px"><i class="fa fa-check-square-o"
-                                                                     title="Tests passed (manual)"></i>
-                    </th>
-                    <th class="test-results-heading" width="25px"><i class="fa fa-square-o"
-                                                                     title="Tests skipped or pending (manual)">
-                    </th>
-                    <th class="test-results-heading" width="25px"><i class="fa fa-times-circle"
-                                                                     title="Tests failed (manual)"></th>
-                    <th class="test-results-heading" width="25px"><i
-                            class="fa fa-exclamation-triangle"
-                            title="Tests failed with an error (manual)"></th>
 
+                <th width="125px" class="test-results-heading">Test Results</th>
 
-                <th width="125px" class="test-results-heading">Coverage</th>
+                <th width="125px" class="test-results-heading">Working Features</th>
             </tr>
             <tbody>
+
 
 
                 <tr class="test-PENDING requirementRow">
@@ -349,169 +327,208 @@
                     <td class="cardNumber requirementRowCell"></td>
 
                     <td class="PENDING-text requirementRowCell">
-                    <a href="javaScript:void(0)" class="read-more-link">
-                    <img src="images/plus.png" height="16"/></a>
+                        <a href="javaScript:void(0)" class="read-more-link">
+                            <img src="images/plus.png" height="16"/></a>
                         <span class="requirementName"><a
-                                href="6cbcc5c3eee118ab4dc1607c8ab62b4ab527f0f3cc6be100779377cc4fb25689.html">Create shipment</a></span>
+                                href="7d02bcc3d62b3a2631bcf4807051be1c.html">Create shipment</a></span>
 
                         <div class="requirementNarrative read-more-text">Create shipment</div>
                     </td>
 
                         <td class="bluetext requirementRowCell">1</td>
 
-
-                    <td class="greentext highlighted-value requirementRowCell">1</td>
+                    <td class="greentext highlighted-value requirementRowCell">5</td>
+<!--
                     <td class="greentext requirementRowCell">0</td>
-                    <td class="bluetext requirementRowCell">1</td>
+                    <td class="bluetext requirementRowCell">5</td>
                     <td class="redtext requirementRowCell">0</td>
                     <td class="lightorangetext requirementRowCell">0</td>
                     <td class="violettext requirementRowCell">0</td>
+-->
                         <td class="greentext highlighted-value requirementRowCell">0</td>
+<!--
                         <td class="greentext requirementRowCell">0</td>
                         <td class="bluetext requirementRowCell">0</td>
                         <td class="redtext requirementRowCell">0</td>
                         <td class="lightorangetext requirementRowCell">0</td>
+                        -->
 
                     <td width="125px" class="lightgreentext requirementRowCell">
 
-                        <table>
-                            <tr>
-                                <td width="40px">
-                                    <div class="small">0%</div>
-                                </td>
-                                <td width="125px">
-                                    <div class="percentagebar"
-                                         title="Create shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
 
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%"
-                                         style="width: 125px;">
-                                        <div class="ignoredbar"
-                                             style="width: 0px;"
-                                             title="Create shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                            <div class="compromisedbar"
-                                                 style="width: 0px;"
-                                                 title="Create shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                <div class="errorbar"
-                                                     style="width: 0px;"
-                                                     title="Create shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                    <div class="failingbar"
-                                                         style="width: 0px;"
-                                                         title="Create shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                        <div class="passingbar"
-                                                             style="width: 0px;"
-                                                             title="Create shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+<table>
+    <tr>
+        <td width="40px">
+            <div class="small">0%</div>
+        </td>
+        <td width="125px">
+            <div class="percentagebar"
+                 title="  - Total tests: 5
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 5 (100%)
+  - Ignored or skipped tests: 0 (0%)"
+                 style="width: 125px;">
+                <div class="pendingbar"
+                     title="  - Total tests: 5
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 5 (100%)
+  - Ignored or skipped tests: 0 (0%)"
+                     style="width: 125px;">
+                    <div class="ignoredbar"
+                         style="width: 0px;"
+                         title="  - Total tests: 5
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 5 (100%)
+  - Ignored or skipped tests: 0 (0%)">
+                        <div class="compromisedbar"
+                             style="width: 0px;"
+                             title="  - Total tests: 5
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 5 (100%)
+  - Ignored or skipped tests: 0 (0%)">
+                            <div class="errorbar"
+                                 style="width: 0px;"
+                                 title="  - Total tests: 5
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 5 (100%)
+  - Ignored or skipped tests: 0 (0%)">
+                                <div class="failingbar"
+                                     style="width: 0px;"
+                                     title="  - Total tests: 5
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 5 (100%)
+  - Ignored or skipped tests: 0 (0%)">
+                                    <div class="passingbar"
+                                         style="width: 0px;"
+                                         title="  - Total tests: 5
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 5 (100%)
+  - Ignored or skipped tests: 0 (0%)">
                                     </div>
-                                </td>
-                            </tr>
-                        </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
                     </td>
 
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+
+<table>
+    <tr>
+        <td width="40px">
+            <div class="small">0%</div>
+        </td>
+        <td width="125px">
+            <div class="percentagebar"
+                 title="Create shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%"
+                 style="width: 125px;">
+                <div class="pendingbar"
+                     title="Create shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%"
+                     style="width: 125px;">
+                    <div class="ignoredbar"
+                         style="width: 0px;"
+                         title="Create shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                        <div class="compromisedbar"
+                             style="width: 0px;"
+                             title="Create shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                            <div class="errorbar"
+                                 style="width: 0px;"
+                                 title="Create shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                                <div class="failingbar"
+                                     style="width: 0px;"
+                                     title="Create shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                                    <div class="passingbar"
+                                         style="width: 0px;"
+                                         title="Create shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+                    </td>
                 </tr>
+
 
                 <tr class="test-PENDING requirementRow">
                     <td class="requirementRowCell">
@@ -521,341 +538,419 @@ Estimated ignored or skipped requirements: 0%">
                     <td class="cardNumber requirementRowCell"></td>
 
                     <td class="PENDING-text requirementRowCell">
-                    <a href="javaScript:void(0)" class="read-more-link">
-                    <img src="images/plus.png" height="16"/></a>
+                        <a href="javaScript:void(0)" class="read-more-link">
+                            <img src="images/plus.png" height="16"/></a>
                         <span class="requirementName"><a
-                                href="6b4ecbff2c83fed570ed712f8481dfdac91ac79d90cd1a17ed92298871f7f6f7.html">Manage shipments</a></span>
+                                href="e00849d12b3dcca7e678293eff805927.html">Manage shipments</a></span>
 
                         <div class="requirementNarrative read-more-text">Manage shipments</div>
                     </td>
 
                         <td class="bluetext requirementRowCell">2</td>
 
-
                     <td class="greentext highlighted-value requirementRowCell">6</td>
+<!--
                     <td class="greentext requirementRowCell">2</td>
                     <td class="bluetext requirementRowCell">4</td>
                     <td class="redtext requirementRowCell">0</td>
                     <td class="lightorangetext requirementRowCell">0</td>
                     <td class="violettext requirementRowCell">0</td>
+-->
                         <td class="greentext highlighted-value requirementRowCell">0</td>
+<!--
                         <td class="greentext requirementRowCell">0</td>
                         <td class="bluetext requirementRowCell">0</td>
                         <td class="redtext requirementRowCell">0</td>
                         <td class="lightorangetext requirementRowCell">0</td>
+                        -->
 
                     <td width="125px" class="lightgreentext requirementRowCell">
 
-                        <table>
-                            <tr>
-                                <td width="40px">
-                                    <div class="small">33.3%</div>
-                                </td>
-                                <td width="125px">
-                                    <div class="percentagebar"
-                                         title="Manage shipments
-Tests implemented: 6
-  - Passing tests: 2 (33.3% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
 
-Tests not implemented or not executed: 4
-  - Pending tests: 4 (66.7% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     5
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
-Estimated ignored or skipped requirements: 0%"
-                                         style="width: 125px;">
-                                        <div class="ignoredbar"
-                                             style="width: 42px;"
-                                             title="Manage shipments
-Tests implemented: 6
-  - Passing tests: 2 (33.3% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 4
-  - Pending tests: 4 (66.7% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     5
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
-Estimated ignored or skipped requirements: 0%">
-                                            <div class="compromisedbar"
-                                                 style="width: 42px;"
-                                                 title="Manage shipments
-Tests implemented: 6
-  - Passing tests: 2 (33.3% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 4
-  - Pending tests: 4 (66.7% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     5
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
-Estimated ignored or skipped requirements: 0%">
-                                                <div class="errorbar"
-                                                     style="width: 42px;"
-                                                     title="Manage shipments
-Tests implemented: 6
-  - Passing tests: 2 (33.3% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 4
-  - Pending tests: 4 (66.7% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     5
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
-Estimated ignored or skipped requirements: 0%">
-                                                    <div class="failingbar"
-                                                         style="width: 42px;"
-                                                         title="Manage shipments
-Tests implemented: 6
-  - Passing tests: 2 (33.3% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 4
-  - Pending tests: 4 (66.7% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     5
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
-Estimated ignored or skipped requirements: 0%">
-                                                        <div class="passingbar"
-                                                             style="width: 42px;"
-                                                             title="Manage shipments
-Tests implemented: 6
-  - Passing tests: 2 (33.3% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 4
-  - Pending tests: 4 (66.7% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     5
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 66.7%
-Estimated ignored or skipped requirements: 0%">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+<table>
+    <tr>
+        <td width="40px">
+            <div class="small">33.3%</div>
+        </td>
+        <td width="125px">
+            <div class="percentagebar"
+                 title="  - Total tests: 6
+  - Passing tests: 2 (33.3%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 4 (66.7%)
+  - Ignored or skipped tests: 0 (0%)"
+                 style="width: 125px;">
+                <div class="pendingbar"
+                     title="  - Total tests: 6
+  - Passing tests: 2 (33.3%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 4 (66.7%)
+  - Ignored or skipped tests: 0 (0%)"
+                     style="width: 125px;">
+                    <div class="ignoredbar"
+                         style="width: 42px;"
+                         title="  - Total tests: 6
+  - Passing tests: 2 (33.3%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 4 (66.7%)
+  - Ignored or skipped tests: 0 (0%)">
+                        <div class="compromisedbar"
+                             style="width: 42px;"
+                             title="  - Total tests: 6
+  - Passing tests: 2 (33.3%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 4 (66.7%)
+  - Ignored or skipped tests: 0 (0%)">
+                            <div class="errorbar"
+                                 style="width: 42px;"
+                                 title="  - Total tests: 6
+  - Passing tests: 2 (33.3%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 4 (66.7%)
+  - Ignored or skipped tests: 0 (0%)">
+                                <div class="failingbar"
+                                     style="width: 42px;"
+                                     title="  - Total tests: 6
+  - Passing tests: 2 (33.3%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 4 (66.7%)
+  - Ignored or skipped tests: 0 (0%)">
+                                    <div class="passingbar"
+                                         style="width: 42px;"
+                                         title="  - Total tests: 6
+  - Passing tests: 2 (33.3%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 4 (66.7%)
+  - Ignored or skipped tests: 0 (0%)">
                                     </div>
-                                </td>
-                            </tr>
-                        </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
                     </td>
 
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+
+<table>
+    <tr>
+        <td width="40px">
+            <div class="small">0%</div>
+        </td>
+        <td width="125px">
+            <div class="percentagebar"
+                 title="Manage shipments:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 2
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%"
+                 style="width: 125px;">
+                <div class="pendingbar"
+                     title="Manage shipments:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 2
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%"
+                     style="width: 125px;">
+                    <div class="ignoredbar"
+                         style="width: 0px;"
+                         title="Manage shipments:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 2
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                        <div class="compromisedbar"
+                             style="width: 0px;"
+                             title="Manage shipments:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 2
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                            <div class="errorbar"
+                                 style="width: 0px;"
+                                 title="Manage shipments:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 2
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                                <div class="failingbar"
+                                     style="width: 0px;"
+                                     title="Manage shipments:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 2
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                                    <div class="passingbar"
+                                         style="width: 0px;"
+                                         title="Manage shipments:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 2
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+                    </td>
                 </tr>
 
-                <tr class="test-PENDING requirementRow">
+
+                <tr class="test-IGNORED requirementRow">
                     <td class="requirementRowCell">
-                        <span class="status_icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                        <span class="status_icon"><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></span>
                         <span style="display:none">2</span>
                     </td>
                     <td class="cardNumber requirementRowCell"></td>
 
-                    <td class="PENDING-text requirementRowCell">
-                    <a href="javaScript:void(0)" class="read-more-link">
-                    <img src="images/plus.png" height="16"/></a>
+                    <td class="IGNORED-text requirementRowCell">
+                        <a href="javaScript:void(0)" class="read-more-link">
+                            <img src="images/plus.png" height="16"/></a>
                         <span class="requirementName"><a
-                                href="867b45dac0c7a9214aee1e6fd4c55d709af8106ea1e3da5eed5fe4ddc9b0cb01.html">Manage tasks</a></span>
+                                href="53a0dab8ede3eb0b67b246fd14dde416.html">Manage tasks</a></span>
 
                         <div class="requirementNarrative read-more-text">Manage tasks</div>
                     </td>
 
                         <td class="bluetext requirementRowCell">1</td>
 
-
                     <td class="greentext highlighted-value requirementRowCell">2</td>
+<!--
                     <td class="greentext requirementRowCell">0</td>
                     <td class="bluetext requirementRowCell">2</td>
                     <td class="redtext requirementRowCell">0</td>
                     <td class="lightorangetext requirementRowCell">0</td>
                     <td class="violettext requirementRowCell">0</td>
+-->
                         <td class="greentext highlighted-value requirementRowCell">0</td>
+<!--
                         <td class="greentext requirementRowCell">0</td>
                         <td class="bluetext requirementRowCell">0</td>
                         <td class="redtext requirementRowCell">0</td>
                         <td class="lightorangetext requirementRowCell">0</td>
+                        -->
 
                     <td width="125px" class="lightgreentext requirementRowCell">
 
-                        <table>
-                            <tr>
-                                <td width="40px">
-                                    <div class="small">0%</div>
-                                </td>
-                                <td width="125px">
-                                    <div class="percentagebar"
-                                         title="Manage tasks
-Tests implemented: 2
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
 
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%"
-                                         style="width: 125px;">
-                                        <div class="ignoredbar"
-                                             style="width: 0px;"
-                                             title="Manage tasks
-Tests implemented: 2
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                            <div class="compromisedbar"
-                                                 style="width: 0px;"
-                                                 title="Manage tasks
-Tests implemented: 2
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                <div class="errorbar"
-                                                     style="width: 0px;"
-                                                     title="Manage tasks
-Tests implemented: 2
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                    <div class="failingbar"
-                                                         style="width: 0px;"
-                                                         title="Manage tasks
-Tests implemented: 2
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                        <div class="passingbar"
-                                                             style="width: 0px;"
-                                                             title="Manage tasks
-Tests implemented: 2
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 2
-  - Pending tests: 2 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+<table>
+    <tr>
+        <td width="40px">
+            <div class="small">0%</div>
+        </td>
+        <td width="125px">
+            <div class="percentagebar"
+                 title="  - Total tests: 2
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 0 (0%)
+  - Ignored or skipped tests: 2 (100%)"
+                 style="width: 125px;">
+                <div class="pendingbar"
+                     title="  - Total tests: 2
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 0 (0%)
+  - Ignored or skipped tests: 2 (100%)"
+                     style="width: 125px;">
+                    <div class="ignoredbar"
+                         style="width: 125px;"
+                         title="  - Total tests: 2
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 0 (0%)
+  - Ignored or skipped tests: 2 (100%)">
+                        <div class="compromisedbar"
+                             style="width: 0px;"
+                             title="  - Total tests: 2
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 0 (0%)
+  - Ignored or skipped tests: 2 (100%)">
+                            <div class="errorbar"
+                                 style="width: 0px;"
+                                 title="  - Total tests: 2
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 0 (0%)
+  - Ignored or skipped tests: 2 (100%)">
+                                <div class="failingbar"
+                                     style="width: 0px;"
+                                     title="  - Total tests: 2
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 0 (0%)
+  - Ignored or skipped tests: 2 (100%)">
+                                    <div class="passingbar"
+                                         style="width: 0px;"
+                                         title="  - Total tests: 2
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 0 (0%)
+  - Ignored or skipped tests: 2 (100%)">
                                     </div>
-                                </td>
-                            </tr>
-                        </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
                     </td>
 
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+
+<table>
+    <tr>
+        <td width="40px">
+            <div class="small">0%</div>
+        </td>
+        <td width="125px">
+            <div class="percentagebar"
+                 title="Manage tasks:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 0
+  - Ignored or skipped Features: 1
+  - Untested Features: 0 (0%"
+                 style="width: 125px;">
+                <div class="pendingbar"
+                     title="Manage tasks:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 0
+  - Ignored or skipped Features: 1
+  - Untested Features: 0 (0%"
+                     style="width: 125px;">
+                    <div class="ignoredbar"
+                         style="width: 125px;"
+                         title="Manage tasks:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 0
+  - Ignored or skipped Features: 1
+  - Untested Features: 0 (0%">
+                        <div class="compromisedbar"
+                             style="width: 0px;"
+                             title="Manage tasks:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 0
+  - Ignored or skipped Features: 1
+  - Untested Features: 0 (0%">
+                            <div class="errorbar"
+                                 style="width: 0px;"
+                                 title="Manage tasks:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 0
+  - Ignored or skipped Features: 1
+  - Untested Features: 0 (0%">
+                                <div class="failingbar"
+                                     style="width: 0px;"
+                                     title="Manage tasks:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 0
+  - Ignored or skipped Features: 1
+  - Untested Features: 0 (0%">
+                                    <div class="passingbar"
+                                         style="width: 0px;"
+                                         title="Manage tasks:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 0
+  - Ignored or skipped Features: 1
+  - Untested Features: 0 (0%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+                    </td>
                 </tr>
+
 
                 <tr class="test-PENDING requirementRow">
                     <td class="requirementRowCell">
@@ -865,168 +960,206 @@ Estimated ignored or skipped requirements: 0%">
                     <td class="cardNumber requirementRowCell"></td>
 
                     <td class="PENDING-text requirementRowCell">
-                    <a href="javaScript:void(0)" class="read-more-link">
-                    <img src="images/plus.png" height="16"/></a>
+                        <a href="javaScript:void(0)" class="read-more-link">
+                            <img src="images/plus.png" height="16"/></a>
                         <span class="requirementName"><a
-                                href="a07430e1f7b77388fb7dbbbf8ee429020a7044c23fdc4b662086caa4c6aa88c4.html">Work on shipment</a></span>
+                                href="088ddbd668c6da282a731f24bce27cc5.html">Work on shipment</a></span>
 
                         <div class="requirementNarrative read-more-text">Work on shipment</div>
                     </td>
 
                         <td class="bluetext requirementRowCell">1</td>
 
-
                     <td class="greentext highlighted-value requirementRowCell">1</td>
+<!--
                     <td class="greentext requirementRowCell">0</td>
                     <td class="bluetext requirementRowCell">1</td>
                     <td class="redtext requirementRowCell">0</td>
                     <td class="lightorangetext requirementRowCell">0</td>
                     <td class="violettext requirementRowCell">0</td>
+-->
                         <td class="greentext highlighted-value requirementRowCell">0</td>
+<!--
                         <td class="greentext requirementRowCell">0</td>
                         <td class="bluetext requirementRowCell">0</td>
                         <td class="redtext requirementRowCell">0</td>
                         <td class="lightorangetext requirementRowCell">0</td>
+                        -->
 
                     <td width="125px" class="lightgreentext requirementRowCell">
 
-                        <table>
-                            <tr>
-                                <td width="40px">
-                                    <div class="small">0%</div>
-                                </td>
-                                <td width="125px">
-                                    <div class="percentagebar"
-                                         title="Work on shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
 
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%"
-                                         style="width: 125px;">
-                                        <div class="ignoredbar"
-                                             style="width: 0px;"
-                                             title="Work on shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                            <div class="compromisedbar"
-                                                 style="width: 0px;"
-                                                 title="Work on shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                <div class="errorbar"
-                                                     style="width: 0px;"
-                                                     title="Work on shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                    <div class="failingbar"
-                                                         style="width: 0px;"
-                                                         title="Work on shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                        <div class="passingbar"
-                                                             style="width: 0px;"
-                                                             title="Work on shipment
-Tests implemented: 1
-  - Passing tests: 0 (0% of specified requirements)
-  - Failing tests: 0 (0% of specified requirements)
-  - Tests with errors: 0 (0% of specified requirements)
-  - Compromised tests 0 (0% of specified requirements)
-
-Tests not implemented or not executed: 1
-  - Pending tests: 1 (100% of specified requirements)
-  - Ignored or skipped tests: 0 (0% of specified requirements)
-
-Requirements specified:     3
-Requirements with no tests: 0
-
-
-Estimated unimplemented tests: 0
-Estimated unimplemented or pending requirements: 100%
-Estimated ignored or skipped requirements: 0%">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+<table>
+    <tr>
+        <td width="40px">
+            <div class="small">0%</div>
+        </td>
+        <td width="125px">
+            <div class="percentagebar"
+                 title="  - Total tests: 1
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 1 (100%)
+  - Ignored or skipped tests: 0 (0%)"
+                 style="width: 125px;">
+                <div class="pendingbar"
+                     title="  - Total tests: 1
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 1 (100%)
+  - Ignored or skipped tests: 0 (0%)"
+                     style="width: 125px;">
+                    <div class="ignoredbar"
+                         style="width: 0px;"
+                         title="  - Total tests: 1
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 1 (100%)
+  - Ignored or skipped tests: 0 (0%)">
+                        <div class="compromisedbar"
+                             style="width: 0px;"
+                             title="  - Total tests: 1
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 1 (100%)
+  - Ignored or skipped tests: 0 (0%)">
+                            <div class="errorbar"
+                                 style="width: 0px;"
+                                 title="  - Total tests: 1
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 1 (100%)
+  - Ignored or skipped tests: 0 (0%)">
+                                <div class="failingbar"
+                                     style="width: 0px;"
+                                     title="  - Total tests: 1
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 1 (100%)
+  - Ignored or skipped tests: 0 (0%)">
+                                    <div class="passingbar"
+                                         style="width: 0px;"
+                                         title="  - Total tests: 1
+  - Passing tests: 0 (0%)
+  - Failing tests: 0 (0%)
+  - Tests with errors: 0 (0%)
+  - Compromised tests 0 (0%)
+  - Pending tests: 1 (100%)
+  - Ignored or skipped tests: 0 (0%)">
                                     </div>
-                                </td>
-                            </tr>
-                        </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
                     </td>
 
+                    <td width="125px" class="lightgreentext requirementRowCell">
+
+
+<table>
+    <tr>
+        <td width="40px">
+            <div class="small">0%</div>
+        </td>
+        <td width="125px">
+            <div class="percentagebar"
+                 title="Work on shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%"
+                 style="width: 125px;">
+                <div class="pendingbar"
+                     title="Work on shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%"
+                     style="width: 125px;">
+                    <div class="ignoredbar"
+                         style="width: 0px;"
+                         title="Work on shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                        <div class="compromisedbar"
+                             style="width: 0px;"
+                             title="Work on shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                            <div class="errorbar"
+                                 style="width: 0px;"
+                                 title="Work on shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                                <div class="failingbar"
+                                     style="width: 0px;"
+                                     title="Work on shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                                    <div class="passingbar"
+                                         style="width: 0px;"
+                                         title="Work on shipment:
+  - Passing Features: 0 (0%
+  - Features Failing: 0 (0%
+  - Features Failing with errors: 0
+  - Compromised Features: 0
+  - Pending Features: 1
+  - Ignored or skipped Features: 0
+  - Untested Features: 0 (0%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -1059,15 +1192,18 @@ Estimated ignored or skipped requirements: 0%">
                                     <span style="display:none">PENDING</span></td>
                                 <td class="PENDING-text">
                                     <div class="ellipsis">
-                                    <a href="b7eb41812d1dbecdf79b65286b860240e00fc026c2e2828a2e79af9b98e08252.html" class="ellipsis" title="">
-                                    Create a new shipment based on minimal required information 
-                                    </a></div>
+
+                                        <a href="cfcf3b384f4a6ce7910ff2a58a99c3ab.html" class="ellipsis" title="">
+                                            Create A New Shipment Based On Minimal Required Information
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
                                 </td>
 
                                 <td class="lightgreentext">5</td>
 
 
-                                <td class="lightgreentext">0.15</td>
+                                <td class="lightgreentext">0.2</td>
                             </tr>
 
                             <tr class="test-PENDING">
@@ -1076,9 +1212,32 @@ Estimated ignored or skipped requirements: 0%">
                                     <span style="display:none">PENDING</span></td>
                                 <td class="PENDING-text">
                                     <div class="ellipsis">
-                                    <a href="040dd6042e54bdb26f1e27a089a2d13bab328170b7f14f5fc8463cfda33669eb.html" class="ellipsis" title="">
-                                    Display a message if the search string does not match any case 
-                                    </a></div>
+
+                                        <a href="8c25e4ecf44f5c4edf62d8351cf69f93.html" class="ellipsis" title="">
+                                            Create A New Shipment With All Information&nbsp;(4  examples)
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">28</td>
+
+
+                                <td class="lightgreentext">0.16</td>
+                            </tr>
+
+                            <tr class="test-PENDING">
+                                <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                                    
+                                    <span style="display:none">PENDING</span></td>
+                                <td class="PENDING-text">
+                                    <div class="ellipsis">
+
+                                        <a href="56d840d1abc184ea6a046b69dfdf80d7.html" class="ellipsis" title="">
+                                            Display A Message If The Search String Does Not Match Any Case
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
                                 </td>
 
                                 <td class="lightgreentext">4</td>
@@ -1087,32 +1246,38 @@ Estimated ignored or skipped requirements: 0%">
                                 <td class="lightgreentext">0.02</td>
                             </tr>
 
-                            <tr class="test-PENDING">
-                                <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                            <tr class="test-IGNORED">
+                                <td><span class="summary-icon"><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></span>
                                     
-                                    <span style="display:none">PENDING</span></td>
-                                <td class="PENDING-text">
+                                    <span style="display:none">IGNORED</span></td>
+                                <td class="IGNORED-text">
                                     <div class="ellipsis">
-                                    <a href="b8ecab99c7a2b7faa5cada73578ca92e62f7b0e72818221adde66156f237bf45.html" class="ellipsis" title="">
-                                    Display a message if there is no task assigned to current user 
-                                    </a></div>
+
+                                        <a href="90b0530762a83ce6e4f7cf926454a85c.html" class="ellipsis" title="">
+                                            Display A Message If There Is No Task Assigned To Current User
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
                                 </td>
 
                                 <td class="lightgreentext">3</td>
 
 
-                                <td class="lightgreentext">0.02</td>
+                                <td class="lightgreentext">0.03</td>
                             </tr>
 
-                            <tr class="test-PENDING">
-                                <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                            <tr class="test-IGNORED">
+                                <td><span class="summary-icon"><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></span>
                                     
-                                    <span style="display:none">PENDING</span></td>
-                                <td class="PENDING-text">
+                                    <span style="display:none">IGNORED</span></td>
+                                <td class="IGNORED-text">
                                     <div class="ellipsis">
-                                    <a href="6a0951c6b29bd8628755376c851594c5455bab6f624d93fd135f96dc47cf368f.html" class="ellipsis" title="">
-                                    List all tasks assigned to current user 
-                                    </a></div>
+
+                                        <a href="417671e443d37e1bdfb0cb518770bc70.html" class="ellipsis" title="">
+                                            List All Tasks Assigned To Current User
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
                                 </td>
 
                                 <td class="lightgreentext">4</td>
@@ -1127,15 +1292,18 @@ Estimated ignored or skipped requirements: 0%">
                                     <span style="display:none">SUCCESS</span></td>
                                 <td class="SUCCESS-text">
                                     <div class="ellipsis">
-                                    <a href="fd37677dbd8213076c7a5c2444d3b914f97446023c73447605d565940af78099.html" class="ellipsis" title="">
-                                    List open shipments with 1 shipment 
-                                    </a></div>
+
+                                        <a href="2138514dcc65741a4a3776bb7a15278b.html" class="ellipsis" title="">
+                                            List Open Shipments With 1 Shipment
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
                                 </td>
 
                                 <td class="lightgreentext">6</td>
 
 
-                                <td class="lightgreentext">7.06</td>
+                                <td class="lightgreentext">9.19</td>
                             </tr>
 
                             <tr class="test-PENDING">
@@ -1144,15 +1312,18 @@ Estimated ignored or skipped requirements: 0%">
                                     <span style="display:none">PENDING</span></td>
                                 <td class="PENDING-text">
                                     <div class="ellipsis">
-                                    <a href="91e65680650aaaa98070e4ca5f36e1cc36111138d0c1ab62ed9ffc7065bac9a7.html" class="ellipsis" title="">
-                                    List open shipments with 5 shipments 
-                                    </a></div>
+
+                                        <a href="a506bf6bfd5542e8f2e7fd3a970562d8.html" class="ellipsis" title="">
+                                            List Open Shipments With 5 Shipments
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
                                 </td>
 
                                 <td class="lightgreentext">3</td>
 
 
-                                <td class="lightgreentext">0.02</td>
+                                <td class="lightgreentext">0.01</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -1161,15 +1332,18 @@ Estimated ignored or skipped requirements: 0%">
                                     <span style="display:none">SUCCESS</span></td>
                                 <td class="SUCCESS-text">
                                     <div class="ellipsis">
-                                    <a href="a43c1310ece1db8f0a3f0c4524a3b4109f08d565761d3029770a04fe1941f6f2.html" class="ellipsis" title="">
-                                    List open shipments without shipments 
-                                    </a></div>
+
+                                        <a href="7df2af59c516ecb71869fc11844aff09.html" class="ellipsis" title="">
+                                            List Open Shipments Without Shipments
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
                                 </td>
 
                                 <td class="lightgreentext">5</td>
 
 
-                                <td class="lightgreentext">8.81</td>
+                                <td class="lightgreentext">8.29</td>
                             </tr>
 
                             <tr class="test-PENDING">
@@ -1178,26 +1352,12 @@ Estimated ignored or skipped requirements: 0%">
                                     <span style="display:none">PENDING</span></td>
                                 <td class="PENDING-text">
                                     <div class="ellipsis">
-                                    <a href="46865a907dd282b6691ae6dea22b6ae96c0defe6004caba2ef35c9ec88079952.html" class="ellipsis" title="">
-                                    Search for shipments by exact customer name 
-                                    </a></div>
-                                </td>
 
-                                <td class="lightgreentext">4</td>
-
-
-                                <td class="lightgreentext">0.01</td>
-                            </tr>
-
-                            <tr class="test-PENDING">
-                                <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
-                                    
-                                    <span style="display:none">PENDING</span></td>
-                                <td class="PENDING-text">
-                                    <div class="ellipsis">
-                                    <a href="93336607f881729770150e5c2becff485543fa0f649112fab3b9facf5cad4bd6.html" class="ellipsis" title="">
-                                    Search for shipments by substrings of customer name 
-                                    </a></div>
+                                        <a href="ea23c0e5a619de779da8e01e01806ba4.html" class="ellipsis" title="">
+                                            Search For Shipments By Exact Customer Name
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
                                 </td>
 
                                 <td class="lightgreentext">4</td>
@@ -1212,15 +1372,38 @@ Estimated ignored or skipped requirements: 0%">
                                     <span style="display:none">PENDING</span></td>
                                 <td class="PENDING-text">
                                     <div class="ellipsis">
-                                    <a href="8f5da3d0a3e597e202687c3707f17a5678ece99e173a0bdfe2c3fc78dd345905.html" class="ellipsis" title="">
-                                    Show the details of a shipment 
-                                    </a></div>
+
+                                        <a href="4a70156a068f7202ea96c9004c84d73e.html" class="ellipsis" title="">
+                                            Search For Shipments By Substrings Of Customer Name
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
+                                </td>
+
+                                <td class="lightgreentext">4</td>
+
+
+                                <td class="lightgreentext">0.02</td>
+                            </tr>
+
+                            <tr class="test-PENDING">
+                                <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                                    
+                                    <span style="display:none">PENDING</span></td>
+                                <td class="PENDING-text">
+                                    <div class="ellipsis">
+
+                                        <a href="fed3388ab84878e032062c1927bf4525.html" class="ellipsis" title="">
+                                            Show The Details Of A Shipment
+                                                <span class="related-issue-title"></span>
+                                        </a>
+                                    </div>
                                 </td>
 
                                 <td class="lightgreentext">6</td>
 
 
-                                <td class="lightgreentext">0.02</td>
+                                <td class="lightgreentext">0.03</td>
                             </tr>
                         </tbody>
                     </table>
@@ -1238,7 +1421,7 @@ Estimated ignored or skipped requirements: 0%">
 </div>
 </div>
 <div id="bottomfooter">
-    <span class="version">Serenity BDD version 1.1.36</span>
+    <span class="version">Serenity BDD version 1.2.2</span>
 </div>
 </body>
 </html>
