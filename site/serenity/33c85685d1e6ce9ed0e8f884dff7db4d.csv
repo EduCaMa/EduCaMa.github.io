@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Search for shipments by customer","Display a message if the search string does not match any case","PENDING","2017-05-26T04:37:21.240Z","0.0","0.02"
-"Search for shipments by customer","Search for shipments by exact customer name","PENDING","2017-05-26T04:37:21.186Z","0.0","0.04"
-"Search for shipments by customer","Search for shipments by substrings of customer name","PENDING","2017-05-26T04:37:21.224Z","0.0","0.02"
+"Search for shipments by customer","Display a message if the search string does not match any case","PENDING","2017-05-29T10:29:42.739Z","0.0","0.05"
+"Search for shipments by customer","Search for shipments by exact customer name","PENDING","2017-05-29T10:29:42.586Z","0.0","0.09"
+"Search for shipments by customer","Search for shipments by substrings of customer name","PENDING","2017-05-29T10:29:42.684Z","0.0","0.05"
