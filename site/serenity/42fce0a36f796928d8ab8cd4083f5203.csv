@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Show current shipments","List open shipments with 1 shipment","SUCCESS","2018-05-15T09:10:23.935Z","0.0","10.91"
-"Show current shipments","List open shipments with 5 shipments","PENDING","2018-05-15T09:10:15.570Z","0.0","0.04"
-"Show current shipments","List open shipments without shipments","SUCCESS","2018-05-15T09:10:15.617Z","0.0","8.2"
+"Show current shipments","List open shipments with 1 shipment","SUCCESS","2018-05-15T11:58:24.519Z","0.0","11.52"
+"Show current shipments","List open shipments with 5 shipments","PENDING","2018-05-15T11:58:15.243Z","0.0","0.08"
+"Show current shipments","List open shipments without shipments","SUCCESS","2018-05-15T11:58:15.329Z","0.0","9.1"
